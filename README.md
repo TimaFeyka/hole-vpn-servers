@@ -19,6 +19,6 @@ Countries and flags are refreshed from the resolved endpoint IP using the public
 
 `health-state.json` records the last successful check and consecutive failures. Minimum healthy-server gates prevent a broken network run from replacing the published feed with an unexpectedly small list.
 
-The current GitHub-hosted check proves DNS and TCP endpoint reachability, not successful VPN egress or reachability from Russia. Full tunnel checks require a trusted self-hosted runner in the target network.
+The current local Mac check proves DNS and TCP endpoint reachability, not successful VPN egress or reachability from Russia. A later full-tunnel stage must run each configuration through its native client from the target network.
 
 Generated data keeps the attribution and licensing terms of its upstream sources. The Xray source is licensed under GPL-3.0.
