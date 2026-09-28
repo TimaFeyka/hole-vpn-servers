@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T08:24:51Z",
+  "generatedAt": "2026-09-28T09:58:19Z",
   "checkScope": "xray-real-tunnel; openvpn-real-tunnel; https-traffic-verified",
   "counts": {
-    "openvpn": 63,
-    "xray": 74,
-    "total": 137,
-    "unverifiedUdp": 28,
-    "candidates": 373
+    "openvpn": 68,
+    "xray": 31,
+    "total": 99,
+    "unverifiedUdp": 30,
+    "candidates": 242
   },
   "sources": {
     "openvpn": "https://www.vpngate.net/api/iphone/",
@@ -18,546 +18,147 @@
   "networkGeoFallback": "ipwho.is for missing or conflicting city records",
   "servers": [
     {
-      "name": "Geneva · Xray 1",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
+      "name": "Limburg an der Lahn · Xray 1",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
       "isOptimal": false,
-      "ping": 2179,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@45.90.57.251:443?encryption=none&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&security=reality&serviceName=grpc-tunnel_nl&sid=fd4f9db207ff64db&sni=dl.google.com&type=grpc&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Aire-la-Ville%20%7C%20%5BBL%5D",
+      "ping": 3014,
+      "configUrl": "trojan://kkn5qxbfabmm5pko@arianet.on1a.com:22445?security=tls&sni=arianet.on1a.com&allowInsecure=1&insecure=1&type=tcp&fp=random#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Limburg%20an%20der%20Lahn%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "DE",
+      "city": "Limburg an der Lahn",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "91.124.209.174",
+      "health": {
+        "status": "reachable",
+        "host": "arianet.on1a.com",
+        "ip": "95.135.200.65",
+        "port": 22445,
+        "transport": "tcp",
+        "latencyMs": 188,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "91.124.209.174",
+          "countryCode": "DE",
+          "city": "Limburg an der Lahn",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 869,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 835
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 310,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1183
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 3014
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Limburg an der Lahn · Xray 2",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
+      "isOptimal": false,
+      "ping": 3521,
+      "configUrl": "trojan://kkn5qxbfabmm5pko@arianet.on1a.com:22445?security=tls&sni=arianet.on1a.com&allowInsecure=1&insecure=1&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Limburg%20an%20der%20Lahn%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "DE",
+      "city": "Limburg an der Lahn",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "91.124.209.174",
+      "health": {
+        "status": "reachable",
+        "host": "arianet.on1a.com",
+        "ip": "95.135.200.65",
+        "port": 22445,
+        "transport": "tcp",
+        "latencyMs": 188,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "91.124.209.174",
+          "countryCode": "DE",
+          "city": "Limburg an der Lahn",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 874,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 845
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 813
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 3521
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Tallinn · Xray 1",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
+      "isOptimal": false,
+      "ping": 3734,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=firefox#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Geneva",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.90.57.251",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "45.90.57.251",
-        "ip": "45.90.57.251",
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 203,
+        "latencyMs": 3295,
         "tunnel": {
           "status": "verified",
-          "exitIp": "45.90.57.251",
-          "countryCode": "CH",
-          "city": "Geneva",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 866,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 463
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 451
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2179
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Geneva · Xray 2",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2180,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@45.90.57.251:443?encryption=none&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&security=reality&serviceName=grpc-tunnel_nl&sid=fd4f9db207ff64db&sni=dl.google.com&type=grpc&fp=chrome#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Aire-la-Ville%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Geneva",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.90.57.251",
-      "health": {
-        "status": "reachable",
-        "host": "45.90.57.251",
-        "ip": "45.90.57.251",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 203,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.90.57.251",
-          "countryCode": "CH",
-          "city": "Geneva",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 866,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 456
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 455
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2180
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 1",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2839,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?encryption=none&security=reality&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&type=xhttp&host=s3.netavex.com&path=%2Fassets%2Fv2%2Fpkg&mode=stream-one&fp=edge#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 204,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 932
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 878
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2839
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 2",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2858,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?type=xhttp&security=reality&path=%2Fassets%2Fv2%2Fpkg&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 198,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 895
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 888
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2858
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 3",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2872,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?encryption=none&security=reality&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&type=xhttp&host=s3.netavex.com&path=%2Fassets%2Fv2%2Fpkg&mode=stream-one&fp=chrome#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 195,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 874,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 928
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 877
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2872
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 4",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2884,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.57:8443?encryption=none&host=s3.netavex.com&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=qq#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "185.191.238.57",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 202,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 913
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 916
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2884
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 5",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2896,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.57:8443?encryption=none&host=s3.netavex.com&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "185.191.238.57",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 195,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 907
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 917
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2896
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 6",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2898,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?type=xhttp&security=reality&path=%2Fassets%2Fv2%2Fpkg&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&fp=edge#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 195,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 874,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 932
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 901
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2898
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 7",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2899,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.57:8443?encryption=none&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "185.191.238.57",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 198,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 874,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 903
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 925
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2899
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Steinhausen · Xray 8",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
-      "isOptimal": false,
-      "ping": 2903,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?encryption=none&mode=stream-one&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=edge#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
-      "health": {
-        "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 202,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -569,7 +170,7 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 899
+                "latencyMs": 1218
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -577,48 +178,48 @@
                 "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 923
+                "latencyMs": 934
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 2903
+          "latencyMs": 3734
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Steinhausen · Xray 9",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
+      "name": "Tallinn · Xray 2",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
       "isOptimal": false,
-      "ping": 2909,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@185.191.238.57:8443?encryption=none&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=qq#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
+      "ping": 4430,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=ios#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "185.191.238.57",
-        "ip": "185.191.238.57",
-        "port": 8443,
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
+        "port": 443,
         "transport": "tcp",
-        "latencyMs": 202,
+        "latencyMs": 3288,
         "tunnel": {
           "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 868,
+            "downloadedBytes": 867,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -626,56 +227,56 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 917
+                "latencyMs": 1400
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 309,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 919
+                "latencyMs": 1949
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 2909
+          "latencyMs": 4430
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Steinhausen · Xray 10",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
+      "name": "Tallinn · Xray 3",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
       "isOptimal": false,
-      "ping": 3135,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?encryption=none&mode=stream-one&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=chrome#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Bern%20%7C%20%5BBL%5D",
+      "ping": 7950,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=qq#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "CH",
-      "city": "Steinhausen",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
+        "port": 443,
         "transport": "tcp",
-        "latencyMs": 202,
+        "latencyMs": 2304,
         "tunnel": {
           "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 868,
+            "downloadedBytes": 872,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -683,169 +284,56 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 921
+                "latencyMs": 1187
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 309,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 914
+                "latencyMs": 4926
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 3135
+          "latencyMs": 7950
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Steinhausen · Xray 11",
-      "flag": "🇨🇭",
-      "countryCode": "CH",
+      "name": "Tallinn · Xray 4",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
       "isOptimal": false,
-      "ping": 3144,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@ch-plr-xh-pilot.tcp-reset-club.net:8443?type=xhttp&security=reality&path=%2Fassets%2Fv2%2Fpkg&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&fp=chrome#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5BBL%5D",
+      "ping": 9509,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=edge#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "",
-      "city": "Steinhausen",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.191.238.57",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "ch-plr-xh-pilot.tcp-reset-club.net",
-        "ip": "185.191.238.57",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 198,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.191.238.57",
-          "countryCode": "CH",
-          "city": "Steinhausen",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 921
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 889
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3144
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Frankfurt am Main · Xray 1",
-      "flag": "🇩🇪",
-      "countryCode": "DE",
-      "isOptimal": false,
-      "ping": 3273,
-      "configUrl": "hysteria2://d900526f-30d7-4f4b-9dbe-e98f17b6fbcc@vpn.ai-boost.tech:2086?sni=vpn.ai-boost.tech&fp=firefox#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%87%B3%F0%9F%87%B1%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "DE",
-      "city": "Frankfurt am Main",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "82.23.177.148",
-      "health": {
-        "status": "unverified-udp",
-        "host": "vpn.ai-boost.tech",
-        "ip": "77.91.115.137",
-        "port": 2086,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "82.23.177.148",
-          "countryCode": "DE",
-          "city": "Frankfurt am Main",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 818
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 889
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3273
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Nuremberg · Xray 1",
-      "flag": "🇩🇪",
-      "countryCode": "DE",
-      "isOptimal": false,
-      "ping": 11186,
-      "configUrl": "vless://06d05a0a-f298-4be9-8fab-3de32e3fb770@159.195.197.211:443?encryption=none&flow=xtls-rprx-vision&pbk=RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ&security=reality&sid=fbbda5&sni=acde3.astro-wall.online&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "DE",
-      "city": "Nuremberg",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "159.195.197.211",
-      "health": {
-        "status": "reachable",
-        "host": "159.195.197.211",
-        "ip": "159.195.197.211",
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 198,
+        "latencyMs": 3316,
         "tunnel": {
           "status": "verified",
-          "exitIp": "159.195.197.211",
-          "countryCode": "DE",
-          "city": "Nuremberg",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 869,
+            "downloadedBytes": 867,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -853,516 +341,56 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 9387
+                "latencyMs": 3960
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 310,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 815
+                "latencyMs": 4149
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 11186
+          "latencyMs": 9509
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Rodgau · Xray 1",
-      "flag": "🇩🇪",
-      "countryCode": "DE",
+      "name": "Tallinn · Xray 5",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
       "isOptimal": false,
-      "ping": 12205,
-      "configUrl": "hysteria2://cf83b611-6cba-4535-adcb-8da06c6a9146@de3-ohl.vpvr4ib84nuv6hdkt.ru:3409?sni=de3-ohl.vpvr4ib84nuv6hdkt.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "DE",
-      "city": "Rodgau",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "94.249.241.155",
-      "health": {
-        "status": "unverified-udp",
-        "host": "de3-ohl.vpvr4ib84nuv6hdkt.ru",
-        "ip": "94.249.241.155",
-        "port": 3409,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "94.249.241.155",
-          "countryCode": "DE",
-          "city": "Rodgau",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 755
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 646
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12205
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Frankfurt am Main · Xray 2",
-      "flag": "🇩🇪",
-      "countryCode": "DE",
-      "isOptimal": false,
-      "ping": 32181,
-      "configUrl": "vless://bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54@arcturus.yokkastars.com:40443?security=reality&encryption=none&pbk=w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=db46e2946fc466fd&fp=safari#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "DE",
-      "city": "Frankfurt am Main",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.17.57.34",
-      "health": {
-        "status": "reachable",
-        "host": "arcturus.yokkastars.com",
-        "ip": "178.17.57.34",
-        "port": 40443,
-        "transport": "tcp",
-        "latencyMs": 208,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.17.57.34",
-          "countryCode": "DE",
-          "city": "Frankfurt am Main",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 175384,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18021
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 928
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 175072,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1551
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 32181
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Madrid · Xray 1",
-      "flag": "🇪🇸",
-      "countryCode": "ES",
-      "isOptimal": false,
-      "ping": 4817,
-      "configUrl": "hysteria2://d900526f-30d7-4f4b-9dbe-e98f17b6fbcc@vpn.ai-boost.tech:2086?sni=vpn.ai-boost.tech&insecure=1&alpn=h3#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%87%B3%F0%9F%87%B1%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "ES",
-      "city": "Madrid",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "82.22.47.111",
-      "health": {
-        "status": "unverified-udp",
-        "host": "vpn.ai-boost.tech",
-        "ip": "77.91.115.137",
-        "port": 2086,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "82.22.47.111",
-          "countryCode": "ES",
-          "city": "Madrid",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1887
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 996
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4817
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 1",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 2190,
-      "configUrl": "hysteria2://cf83b611-6cba-4535-adcb-8da06c6a9146@144.31.212.253:443?sni=vps155-edge.kermemehori.ru#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "144.31.212.253",
-      "health": {
-        "status": "unverified-udp",
-        "host": "144.31.212.253",
-        "ip": "144.31.212.253",
-        "port": 443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "144.31.212.253",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 870,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 543
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 311,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 510
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2190
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 2",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 3093,
-      "configUrl": "hysteria2://kewr0929_M9ic23iqe_m9E2R93Js8034c_Rt10@222.167.212.154:8443?sni=new-finland-september.bumbleshrimp.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "222.167.212.151",
-      "health": {
-        "status": "unverified-udp",
-        "host": "222.167.212.154",
-        "ip": "222.167.212.154",
-        "port": 8443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "222.167.212.151",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 869,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 788
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 706
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3093
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 3",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 4699,
-      "configUrl": "vless://06d05a0a-f298-4be9-8fab-3de32e3fb770@acfl.astro-wall.online:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=acfl.astro-wall.online&pbk=RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ&sid=fbbda5&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2a01:ecc0:500:30e::2",
-      "health": {
-        "status": "reachable",
-        "host": "acfl.astro-wall.online",
-        "ip": "31.77.140.157",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 335,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2a01:ecc0:500:30e::2",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 879,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1485
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 320,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1574
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4699
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 4",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 4762,
-      "configUrl": "vless://06d05a0a-f298-4be9-8fab-3de32e3fb770@acfl.astro-wall.online:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=acfl.astro-wall.online&pbk=RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ&sid=fbbda5&fp=qq#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2a01:ecc0:500:30e::2",
-      "health": {
-        "status": "reachable",
-        "host": "acfl.astro-wall.online",
-        "ip": "31.77.140.157",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 329,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2a01:ecc0:500:30e::2",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 880,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1486
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 321,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1557
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4762
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 5",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 4840,
-      "configUrl": "vless://06d05a0a-f298-4be9-8fab-3de32e3fb770@acfl.astro-wall.online:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=acfl.astro-wall.online&pbk=RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ&sid=fbbda5&fp=chrome#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2a01:ecc0:500:30e::2",
-      "health": {
-        "status": "reachable",
-        "host": "acfl.astro-wall.online",
-        "ip": "31.77.140.157",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 337,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2a01:ecc0:500:30e::2",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 879,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1526
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 320,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1493
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4840
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 6",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 5982,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?mode=gun&security=reality&encryption=none&authority=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&type=grpc&serviceName=grpc-tunnel_nl&sni=dl.google.com&sid=fd4f9db207ff64db&fp=qq#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "ping": 10535,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=chrome#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 203,
+        "latencyMs": 3322,
         "tunnel": {
           "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 870,
+            "downloadedBytes": 884,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -1370,56 +398,56 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3787
+                "latencyMs": 4521
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 311,
+                "bytes": 325,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 650
+                "latencyMs": 3082
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 5982
+          "latencyMs": 10535
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Helsinki · Xray 7",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
+      "name": "Tallinn · Xray 6",
+      "flag": "🇪🇪",
+      "countryCode": "EE",
       "isOptimal": false,
-      "ping": 8800,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?mode=gun&security=reality&encryption=none&authority=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&type=grpc&serviceName=grpc-tunnel_nl&sni=dl.google.com&sid=fd4f9db207ff64db&fp=chrome#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "ping": 12005,
+      "configUrl": "vless://c16fd1ee-7581-4fe9-aac7-ef7c89a1ddad@188.255.236.7:443/?flow=&type=tcp&headerType=none&security=reality&sni=est.brknet.org&pbk=z7mojejTp0TkupbhL5YmZD6yZdVxZev_lTWY54gY6j4&sid=0123456789abcdef&fp=safari#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
+      "declaredCountryCode": "EE",
+      "city": "Tallinn",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
+      "exitIp": "188.255.236.7",
       "health": {
         "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
+        "host": "188.255.236.7",
+        "ip": "188.255.236.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 203,
+        "latencyMs": 2266,
         "tunnel": {
           "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
+          "exitIp": "188.255.236.7",
+          "countryCode": "EE",
+          "city": "Tallinn",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 870,
+            "downloadedBytes": 884,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -1427,429 +455,22 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3971
+                "latencyMs": 6445
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 311,
+                "bytes": 325,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3589
+                "latencyMs": 1399
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 8800
+          "latencyMs": 12005
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 8",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 8896,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?encryption=none&security=reality&sni=dl.google.com&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&sid=fd4f9db207ff64db&type=grpc&serviceName=grpc-tunnel_nl&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
-      "health": {
-        "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 200,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 655
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3767
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 8896
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 9",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 9042,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?encryption=none&security=reality&sni=dl.google.com&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&sid=fd4f9db207ff64db&type=grpc&serviceName=grpc-tunnel_nl&fp=random#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
-      "health": {
-        "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 201,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 694
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3795
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 9042
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 10",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 9239,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?encryption=none&security=reality&sni=dl.google.com&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&sid=fd4f9db207ff64db&type=grpc&serviceName=grpc-tunnel_nl&fp=chrome#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
-      "health": {
-        "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 200,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 870,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3954
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 311,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 641
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 9239
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 11",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 12133,
-      "configUrl": "vless://10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2@87.120.107.246:443?mode=gun&security=reality&encryption=none&authority=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&pbk=20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc&type=grpc&serviceName=grpc-tunnel_nl&sni=dl.google.com&sid=fd4f9db207ff64db&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "87.120.107.246",
-      "health": {
-        "status": "reachable",
-        "host": "87.120.107.246",
-        "ip": "87.120.107.246",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 202,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "87.120.107.246",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 869,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 7011
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3867
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12133
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 12",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 12630,
-      "configUrl": "vless://61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8@13.143.166.112:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=unpkg.com&allowInsecure=1&security=reality&pbk=V-cWjK_GZ0PTJ3wnUHgwey_dNWI6_QNXsC9CdmA0mVI&sid=408c85938839e89f&fp=safari#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "13.143.166.112",
-      "health": {
-        "status": "reachable",
-        "host": "13.143.166.112",
-        "ip": "13.143.166.112",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 441,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "13.143.166.112",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 9426
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1996
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12630
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Helsinki · Xray 13",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
-      "isOptimal": false,
-      "ping": 29637,
-      "configUrl": "vless://61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8@13.143.166.112:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=unpkg.com&allowInsecure=1&security=reality&pbk=V-cWjK_GZ0PTJ3wnUHgwey_dNWI6_QNXsC9CdmA0mVI&sid=408c85938839e89f&fp=chrome#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "",
-      "city": "Helsinki",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "13.143.166.112",
-      "health": {
-        "status": "reachable",
-        "host": "13.143.166.112",
-        "ip": "13.143.166.112",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 440,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "13.143.166.112",
-          "countryCode": "FI",
-          "city": "Helsinki",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 175382,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18025
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8534
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 175072,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1861
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 29637
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Slough · Xray 1",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
-      "isOptimal": false,
-      "ping": 3190,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@davai6.api3-max.ru:443?flow=xtls-rprx-vision&security=tls&sni=davai6.api3-max.ru&type=tcp&fp=qq#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "davai6.api3-max.ru",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1478
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 764
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3190
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
@@ -1857,7 +478,349 @@
       "flag": "🇬🇧",
       "countryCode": "GB",
       "isOptimal": false,
-      "ping": 4483,
+      "ping": 3821,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=safari#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 204,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 867,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1215
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 987
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 3821
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 2",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 3845,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=qq#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 201,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 871,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1279
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1132
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 3845
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 3",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 4060,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=ios#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 199,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 871,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1222
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1266
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 4060
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 4",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 4720,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 199,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 871,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1452
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1389
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 4720
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 5",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 5923,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=edge#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 199,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 871,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2559
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1558
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 5923
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 6",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 6032,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@31.76.39.230:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=chrome#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "GB",
+      "city": "London",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "31.76.39.230",
+      "health": {
+        "status": "reachable",
+        "host": "31.76.39.230",
+        "ip": "31.76.39.230",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 199,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "31.76.39.230",
+          "countryCode": "GB",
+          "city": "London",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 872,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2618
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1519
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 6032
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "London · Xray 7",
+      "flag": "🇬🇧",
+      "countryCode": "GB",
+      "isOptimal": false,
+      "ping": 18070,
       "configUrl": "hysteria2://b8949dae-cb53-4b5a-ad9c-50f58c4656fb@uk1.xiaoliyu.us:2056?insecure=1#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "hysteria2",
@@ -1882,7 +845,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 872,
+            "downloadedBytes": 867,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -1890,677 +853,52 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 678
+                "latencyMs": 10600
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 313,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 468
+                "latencyMs": 564
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 4483
+          "latencyMs": 18070
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Slough · Xray 2",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
+      "name": "Tokyo · Xray 1",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
       "isOptimal": false,
-      "ping": 6702,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@davai6.api3-max.ru:443?security=tls&encryption=none&sni=davai6.api3-max.ru&alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision&type=tcp&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
+      "ping": 4377,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=qq#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "davai6.api3-max.ru",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 872,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1923
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3857
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6702
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Slough · Xray 3",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
-      "isOptimal": false,
-      "ping": 7727,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@davai6.api3-max.ru:443?security=tls&encryption=none&sni=davai6.api3-max.ru&alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision&type=tcp&fp=qq#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "davai6.api3-max.ru",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 872,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 768
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2924
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 7727
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Slough · Xray 4",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
-      "isOptimal": false,
-      "ping": 8193,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@45.141.118.57:443?type=tcp&security=tls&flow=xtls-rprx-vision&sni=davai6.api3-max.ru&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "45.141.118.57",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2876
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4362
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 8193
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Slough · Xray 5",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
-      "isOptimal": false,
-      "ping": 9439,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@45.141.118.57:443?type=tcp&security=tls&flow=xtls-rprx-vision&sni=davai6.api3-max.ru&fp=qq#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "45.141.118.57",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 776
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6854
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 9439
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Slough · Xray 6",
-      "flag": "🇬🇧",
-      "countryCode": "GB",
-      "isOptimal": false,
-      "ping": 9898,
-      "configUrl": "vless://cdd6bfce-781a-4454-b7d5-4778abb5c24f@davai6.api3-max.ru:443?flow=xtls-rprx-vision&security=tls&sni=davai6.api3-max.ru&type=tcp&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "GB",
-      "city": "Slough",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.118.57",
-      "health": {
-        "status": "unreachable",
-        "host": "davai6.api3-max.ru",
-        "ip": "45.141.118.57",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "45.141.118.57",
-          "countryCode": "GB",
-          "city": "Slough",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 873,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6231
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2726
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 9898
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Hong Kong · Xray 1",
-      "flag": "🇭🇰",
-      "countryCode": "HK",
-      "isOptimal": false,
-      "ping": 12009,
-      "configUrl": "vless://966990b5-5868-4af1-add6-011c72b4a443@45.207.157.8:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.amazon.com&pbk=0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4&sid=b390142456517acc&type=tcp&fp=random#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Hong%20Kong%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "HK",
-      "city": "Hong Kong",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2401:b60:5:b118:3e17:68bb:b219:2214",
+      "exitIp": "153.121.45.101",
       "health": {
         "status": "reachable",
-        "host": "45.207.157.8",
-        "ip": "45.207.157.8",
-        "port": 9443,
-        "transport": "tcp",
-        "latencyMs": 324,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2401:b60:5:b118:3e17:68bb:b219:2214",
-          "countryCode": "HK",
-          "city": "Hong Kong",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 889,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3311
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 330,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3785
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12009
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 1",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 1983,
-      "configUrl": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.100:8443?sni=grape-test-italy.dynuddns.net&insecure=1&alpn=h3#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "77.74.123.98",
-      "health": {
-        "status": "unverified-udp",
-        "host": "77.74.123.100",
-        "ip": "77.74.123.100",
-        "port": 8443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "77.74.123.98",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 871,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 465
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 450
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 1983
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 2",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 5133,
-      "configUrl": "vless://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@nl-xh02.tcp-reset-club.net:8443?encryption=none&security=reality&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&type=xhttp&path=%2Fassets%2Fv2%2Fpkg&mode=stream-one&extra=%7B%0A++%22xmux%22%3A+%7B%0A++++%22maxConcurrency%22%3A+%2216-32%22%0A++%7D%0A%7D&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "nl-xh02.tcp-reset-club.net",
-        "ip": "109.235.49.3",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
         "port": 8443,
         "transport": "tcp",
-        "latencyMs": 212,
+        "latencyMs": 259,
         "tunnel": {
           "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 872,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 777
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 665
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 5133
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 3",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 11012,
-      "configUrl": "vless://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@109.235.49.3:8443?encryption=none&extra=%7B%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%7D%7D&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "109.235.49.3",
-        "ip": "109.235.49.3",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 211,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 866,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1793
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 737
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 11012
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 4",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 13492,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@nl-xh02.tcp-reset-club.net:8443?encryption=none&security=reality&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&type=xhttp&path=%2Fassets%2Fv2%2Fpkg&mode=stream-one&extra=%7B%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%7D%7D&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "nl-xh02.tcp-reset-club.net",
-        "ip": "109.235.49.3",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 204,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 872,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2211
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 772
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 13492
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 5",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 13809,
-      "configUrl": "vless://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@109.235.49.3:8443?encryption=none&extra=%7B%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%7D%7D&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "109.235.49.3",
-        "ip": "109.235.49.3",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 211,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 871,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2357
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 762
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 13809
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 6",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 16411,
-      "configUrl": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.100:8443?sni=grape-test-italy.dynuddns.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "77.74.123.98",
-      "health": {
-        "status": "unverified-udp",
-        "host": "77.74.123.100",
-        "ip": "77.74.123.100",
-        "port": 8443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "77.74.123.98",
-          "countryCode": "NL",
-          "city": "Amsterdam",
+          "exitIp": "153.121.45.101",
+          "countryCode": "JP",
+          "city": "Tokyo",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -2572,7 +910,7 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4328
+                "latencyMs": 1402
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2580,43 +918,158 @@
                 "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4623
+                "latencyMs": 1406
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 16411
+          "latencyMs": 4377
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Diemen · Xray 1",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
+      "name": "Tokyo · Xray 2",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
       "isOptimal": false,
-      "ping": 17587,
-      "configUrl": "hysteria2://cf83b611-6cba-4535-adcb-8da06c6a9146@nl4-6vkfut.vpvr4ib84nuv6hdkt.ru:3489?sni=nl4-6vkfut.vpvr4ib84nuv6hdkt.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "ping": 4385,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=edge#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
       "configContent": null,
-      "protocol": "hysteria2",
+      "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Diemen",
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "45.141.202.148",
+      "exitIp": "167.179.117.9",
       "health": {
-        "status": "unverified-udp",
-        "host": "nl4-6vkfut.vpvr4ib84nuv6hdkt.ru",
-        "ip": "45.141.202.167",
-        "port": 3489,
-        "transport": "udp",
+        "status": "reachable",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
+        "port": 8443,
+        "transport": "tcp",
+        "latencyMs": 259,
         "tunnel": {
           "status": "verified",
-          "exitIp": "45.141.202.148",
-          "countryCode": "NL",
-          "city": "Diemen",
+          "exitIp": "167.179.117.9",
+          "countryCode": "JP",
+          "city": "Tokyo",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 868,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1452
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1379
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 4385
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Tokyo · Xray 3",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
+      "isOptimal": false,
+      "ping": 4425,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=safari#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "167.179.117.9",
+      "health": {
+        "status": "reachable",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
+        "port": 8443,
+        "transport": "tcp",
+        "latencyMs": 259,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "167.179.117.9",
+          "countryCode": "JP",
+          "city": "Tokyo",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 869,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1458
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 310,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1381
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 4425
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Tokyo · Xray 4",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
+      "isOptimal": false,
+      "ping": 4819,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=firefox#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "137.220.225.56",
+      "health": {
+        "status": "reachable",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
+        "port": 8443,
+        "transport": "tcp",
+        "latencyMs": 259,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "137.220.225.56",
+          "countryCode": "JP",
+          "city": "Tokyo",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -2628,7 +1081,7 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2918
+                "latencyMs": 1815
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2636,965 +1089,44 @@
                 "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2990
+                "latencyMs": 1404
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 17587
+          "latencyMs": 4819
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 7",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
+      "name": "Tokyo · Xray 5",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
       "isOptimal": false,
-      "ping": 18495,
-      "configUrl": "vless://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@nl-xh02.tcp-reset-club.net:8443?encryption=none&security=reality&sni=s3.netavex.com&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&sid=e0&type=xhttp&path=%2Fassets%2Fv2%2Fpkg&mode=stream-one&extra=%7B%0A++%22xmux%22%3A+%7B%0A++++%22maxConcurrency%22%3A+%2216-32%22%0A++%7D%0A%7D&fp=random#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
+      "ping": 4954,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=ios#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
+      "exitIp": "141.147.162.33",
       "health": {
         "status": "reachable",
-        "host": "nl-xh02.tcp-reset-club.net",
-        "ip": "109.235.49.3",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
         "port": 8443,
         "transport": "tcp",
-        "latencyMs": 1338,
+        "latencyMs": 259,
         "tunnel": {
           "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 866,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2582
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8691
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 18495
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 8",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 21693,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@109.235.49.3:8443?encryption=none&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "109.235.49.3",
-        "ip": "109.235.49.3",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 210,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 871,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4228
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1304
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 21693
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 9",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 23941,
-      "configUrl": "vless://721bacfe-ff09-4e63-a735-686015bc1351@109.235.49.3:8443?encryption=none&path=%2Fassets%2Fv2%2Fpkg&pbk=Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg&security=reality&sid=e0&sni=s3.netavex.com&type=xhttp&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Zuidoost%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "109.235.49.3",
-      "health": {
-        "status": "reachable",
-        "host": "109.235.49.3",
-        "ip": "109.235.49.3",
-        "port": 8443,
-        "transport": "tcp",
-        "latencyMs": 210,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "109.235.49.3",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3186
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 5003
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 23941
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Oslo · Xray 1",
-      "flag": "🇳🇴",
-      "countryCode": "NO",
-      "isOptimal": false,
-      "ping": 17641,
-      "configUrl": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@31.76.5.144:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=norw-1.failspace.top&type=tcp&fp=chrome#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Oslo%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "NO",
-      "city": "Oslo",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "31.76.5.0",
-      "health": {
-        "status": "reachable",
-        "host": "31.76.5.144",
-        "ip": "31.76.5.144",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 346,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "31.76.5.0",
-          "countryCode": "NO",
-          "city": "Oslo",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 869,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4878
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 7974
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 17641
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Oslo · Xray 2",
-      "flag": "🇳🇴",
-      "countryCode": "NO",
-      "isOptimal": false,
-      "ping": 21277,
-      "configUrl": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@31.76.5.144:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=norw-1.failspace.top&type=tcp&fp=qq#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Oslo%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "NO",
-      "city": "Oslo",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "31.76.5.0",
-      "health": {
-        "status": "reachable",
-        "host": "31.76.5.144",
-        "ip": "31.76.5.144",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 348,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "31.76.5.0",
-          "countryCode": "NO",
-          "city": "Oslo",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 869,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 5987
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8453
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 21277
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Oslo · Xray 3",
-      "flag": "🇳🇴",
-      "countryCode": "NO",
-      "isOptimal": false,
-      "ping": 26888,
-      "configUrl": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@31.76.5.144:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=norw-1.failspace.top&type=tcp&fp=firefox#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Oslo%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "NO",
-      "city": "Oslo",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "31.76.5.0",
-      "health": {
-        "status": "reachable",
-        "host": "31.76.5.144",
-        "ip": "31.76.5.144",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 342,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "31.76.5.0",
-          "countryCode": "NO",
-          "city": "Oslo",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 864,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6313
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 305,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 12216
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 26888
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 1",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 8836,
-      "configUrl": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.249.198:443?type=tcp&security=tls&flow=xtls-rprx-vision&sni=polka.failspace.top&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "50.7.248.50",
-      "health": {
-        "status": "reachable",
-        "host": "50.7.249.198",
-        "ip": "50.7.249.198",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 427,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "50.7.248.50",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 870,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1968
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 311,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 956
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 8836
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Wroclaw · Xray 1",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 14184,
-      "configUrl": "vless://e60bc99b-6630-4799-af84-f90ebdc643b6@212.127.90.70:443/?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&sni=ya.ru&pbk=ekAy1JlpzdGXmGIX2Q-RO3dF5Sklz6ncODSgTW2mqz8&fp=edge#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5BSNI-RU%5D%20ya.ru",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Wroclaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "212.127.90.70",
-      "health": {
-        "status": "reachable",
-        "host": "212.127.90.70",
-        "ip": "212.127.90.70",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 208,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "212.127.90.70",
-          "countryCode": "PL",
-          "city": "Wroclaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3919
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4226
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 14184
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Wroclaw · Xray 2",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 14369,
-      "configUrl": "vless://e60bc99b-6630-4799-af84-f90ebdc643b6@212.127.90.70:443/?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&sni=ya.ru&pbk=ekAy1JlpzdGXmGIX2Q-RO3dF5Sklz6ncODSgTW2mqz8&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5BSNI-RU%5D%20ya.ru",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Wroclaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "212.127.90.70",
-      "health": {
-        "status": "reachable",
-        "host": "212.127.90.70",
-        "ip": "212.127.90.70",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 207,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "212.127.90.70",
-          "countryCode": "PL",
-          "city": "Wroclaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4500
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4208
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 14369
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Wroclaw · Xray 3",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 17214,
-      "configUrl": "vless://e60bc99b-6630-4799-af84-f90ebdc643b6@212.127.90.70:443/?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&sni=ya.ru&pbk=ekAy1JlpzdGXmGIX2Q-RO3dF5Sklz6ncODSgTW2mqz8&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5BSNI-RU%5D%20ya.ru",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Wroclaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "212.127.90.70",
-      "health": {
-        "status": "reachable",
-        "host": "212.127.90.70",
-        "ip": "212.127.90.70",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 218,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "212.127.90.70",
-          "countryCode": "PL",
-          "city": "Wroclaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4202
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3636
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 17214
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Wroclaw · Xray 4",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 17560,
-      "configUrl": "vless://e60bc99b-6630-4799-af84-f90ebdc643b6@212.127.90.70:443/?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&sni=ya.ru&pbk=ekAy1JlpzdGXmGIX2Q-RO3dF5Sklz6ncODSgTW2mqz8&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%7C%20%5BSNI-RU%5D%20ya.ru",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Wroclaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "212.127.90.70",
-      "health": {
-        "status": "reachable",
-        "host": "212.127.90.70",
-        "ip": "212.127.90.70",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 209,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "212.127.90.70",
-          "countryCode": "PL",
-          "city": "Wroclaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3960
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4104
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 17560
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 2",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 21760,
-      "configUrl": "vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.249.198:443?type=tcp&security=tls&flow=xtls-rprx-vision&sni=polka.failspace.top&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "50.7.248.50",
-      "health": {
-        "status": "reachable",
-        "host": "50.7.249.198",
-        "ip": "50.7.249.198",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 216,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "50.7.248.50",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 865,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8604
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 306,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 10746
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 21760
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Bucharest · Xray 1",
-      "flag": "🇷🇴",
-      "countryCode": "RO",
-      "isOptimal": false,
-      "ping": 2218,
-      "configUrl": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.190:8443?sni=hopp-romania-new.roxa.org&insecure=1&alpn=h3#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Bucharest",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "85.204.107.162",
-      "health": {
-        "status": "unverified-udp",
-        "host": "85.204.107.190",
-        "ip": "85.204.107.190",
-        "port": 8443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "85.204.107.162",
-          "countryCode": "RO",
-          "city": "Bucharest",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 869,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 534
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 497
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2218
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Bucharest · Xray 2",
-      "flag": "🇷🇴",
-      "countryCode": "RO",
-      "isOptimal": false,
-      "ping": 12552,
-      "configUrl": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.190:8443?sni=hopp-romania-new.roxa.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Bucharest",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "85.204.107.162",
-      "health": {
-        "status": "unverified-udp",
-        "host": "85.204.107.190",
-        "ip": "85.204.107.190",
-        "port": 8443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "85.204.107.162",
-          "countryCode": "RO",
-          "city": "Bucharest",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 867,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 683
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 550
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12552
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Москва · Xray 1",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 2942,
-      "configUrl": "hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:22443?sni=hy.quattro-tech.ru&fp=random&alpn=h3#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "RU",
-      "city": "Moscow",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.16.213.71",
-      "health": {
-        "status": "unverified-udp",
-        "host": "91.240.86.70",
-        "ip": "91.240.86.70",
-        "port": 22443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.16.213.71",
-          "countryCode": "RU",
-          "city": "Moscow",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 511
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 543
-              }
-            ]
-          },
-          "requiredSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42090,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 727
-          },
-          "latencyMs": 2942
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Москва · Xray 2",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 6497,
-      "configUrl": "hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:22443?sni=itsallproxy.quattro-tech.ru&alpn=h3#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "RU",
-      "city": "Moscow",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.16.213.71",
-      "health": {
-        "status": "unverified-udp",
-        "host": "91.240.86.70",
-        "ip": "91.240.86.70",
-        "port": 22443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.16.213.71",
-          "countryCode": "RU",
-          "city": "Moscow",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 868,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 509
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 533
-              }
-            ]
-          },
-          "requiredSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42090,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 4298
-          },
-          "latencyMs": 6497
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Москва · Xray 3",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 6856,
-      "configUrl": "hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:22443?sni=itsallproxy.quattro-tech.ru#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "RU",
-      "city": "Moscow",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "185.16.213.71",
-      "health": {
-        "status": "unverified-udp",
-        "host": "91.240.86.70",
-        "ip": "91.240.86.70",
-        "port": 22443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "185.16.213.71",
-          "countryCode": "RU",
-          "city": "Moscow",
+          "exitIp": "141.147.162.33",
+          "countryCode": "JP",
+          "city": "Tokyo",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -3606,7 +1138,7 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 511
+                "latencyMs": 1488
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3614,55 +1146,48 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 529
+                "latencyMs": 1915
               }
             ]
           },
-          "requiredSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42090,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 4666
-          },
-          "latencyMs": 6856
+          "requiredSite": null,
+          "latencyMs": 4954
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Москва · Xray 4",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
+      "name": "Ibaraki · Xray 1",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
       "isOptimal": false,
-      "ping": 12322,
-      "configUrl": "vmess://eyJ2IjoiMiIsInBzIjoi8J+Ht/Cfh7ogUnVzc2lhIHwgWypDSURSXSBZQSIsImFkZCI6IjE1OC4xNjAuMjExLjIwMCIsInBvcnQiOiIxMTU1NiIsImlkIjoiZTI3MzNkYmMtMWJjNi00ODM1LWI5MGEtNDQ3ODA2ZjllZmNkIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwiZnAiOiJjaHJvbWUiLCJhbHBuIjoiaDIsaHR0cC8xLjEiLCJlY2giOiJBRlArRFFCUEFBQWdBQ0MyS29FTklma1ZLdHZYWFQrdzNIbWdKTTFPTXVhWnp2VWlzYXpTaW1qQVJBQWtBQUVBQVFBQkFBSUFBUUFEQUFJQUFRQUNBQUlBQWdBREFBTUFBUUFEQUFJQUF3QURBQUFBQUE9PSIsInBjcyI6ImM4MjI5ZTJjZTk3MmJlMjc2ZWI4NzQ1ZWQzNTY4MjVkZDJlOGVjZDc3NmQ3MjYyNjQyMmY5MjkwOWRjYTllZDksOTc2NThkZThjNjhkZmE5OGFjZTFlNTAyOGE2M2Q1NGExYWFlOTExYjNlMjE0NzEwNzZjNjg1MGNkMDhjYmFiNCwwZmMwOTAxY2NhMmJhZTllOWZkYmIwMmQ1MGQwMmYxMDk0ZjdiMzY2NzIwODY5OTFiOWU4OTc2MjZkYzQ4NWYwLGVlNWY3YWJkNjk4MWJiMDI1NTYzMmNkOGY0OTI4MzQ1MWI0YjE4ODQ0ZDEyMDQwYjQ0ZWUwMGYwN2I4ZmUyYzYiLCJhaWQiOiIwIiwiaG9zdCI6IiIsInBhdGgiOiIiLCJzbmkiOiIifQ==",
+      "ping": 4958,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
       "configContent": null,
-      "protocol": "vmess",
+      "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "",
-      "city": "Moscow",
+      "declaredCountryCode": "AR",
+      "city": "Ibaraki",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "158.160.211.200",
+      "exitIp": "140.83.55.25",
       "health": {
         "status": "reachable",
-        "host": "158.160.211.200",
-        "ip": "158.160.211.200",
-        "port": 11556,
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
+        "port": 8443,
         "transport": "tcp",
-        "latencyMs": 231,
+        "latencyMs": 259,
         "tunnel": {
           "status": "verified",
-          "exitIp": "158.160.211.200",
-          "countryCode": "RU",
-          "city": "Moscow",
+          "exitIp": "140.83.55.25",
+          "countryCode": "JP",
+          "city": "Ibaraki",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 875,
+            "downloadedBytes": 874,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -3670,37 +1195,87 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1035
+                "latencyMs": 1908
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 316,
+                "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1021
+                "latencyMs": 1450
               }
             ]
           },
-          "requiredSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42090,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 1433
-          },
-          "latencyMs": 12322
+          "requiredSite": null,
+          "latencyMs": 4958
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Москва · Xray 5",
+      "name": "Tokyo · Xray 6",
+      "flag": "🇯🇵",
+      "countryCode": "JP",
+      "isOptimal": false,
+      "ping": 5185,
+      "configUrl": "vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@156.246.94.193:8443?encryption=none&security=tls&sni=1108a.0zkp.ysj.hh.vavava.kdns.fr&type=ws&path=%2F&host=1108a.0zkp.ysj.hh.vavava.kdns.fr&ed=2560&fp=android#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "AR",
+      "city": "Tokyo",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "141.147.185.63",
+      "health": {
+        "status": "reachable",
+        "host": "156.246.94.193",
+        "ip": "156.246.94.193",
+        "port": 8443,
+        "transport": "tcp",
+        "latencyMs": 260,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "141.147.185.63",
+          "countryCode": "JP",
+          "city": "Tokyo",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 867,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1714
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1641
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 5185
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Москва · Xray 1",
       "flag": "🇷🇺",
       "countryCode": "RU",
       "isOptimal": false,
-      "ping": 14646,
+      "ping": 5210,
       "configUrl": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICIiLAogICJhZGQiOiAiMTU4LjE2MC4yMTEuMjAwIiwKICAicG9ydCI6IDExNTU2LAogICJpZCI6ICJlMjczM2RiYy0xYmM2LTQ4MzUtYjkwYS00NDc4MDZmOWVmY2QiLAogICJzY3kiOiAiYXV0byIsCiAgIm5ldCI6ICJ0Y3AiLAogICJ0bHMiOiAidGxzIiwKICAidHlwZSI6ICJub25lIiwKICAiZnAiOiAiY2hyb21lIiwKICAiYWxwbiI6ICJoMixodHRwLzEuMSIsCiAgImVjaCI6ICJBRlArRFFCUEFBQWdBQ0MyS29FTklma1ZLdHZYWFQrdzNIbWdKTTFPTXVhWnp2VWlzYXpTaW1qQVJBQWtBQUVBQVFBQkFBSUFBUUFEQUFJQUFRQUNBQUlBQWdBREFBTUFBUUFEQUFJQUF3QURBQUFBQUE9PSIsCiAgInBjcyI6ICJjODIyOWUyY2U5NzJiZTI3NmViODc0NWVkMzU2ODI1ZGQyZThlY2Q3NzZkNzI2MjY0MjJmOTI5MDlkY2E5ZWQ5LDk3NjU4ZGU4YzY4ZGZhOThhY2UxZTUwMjhhNjNkNTRhMWFhZTkxMWIzZTIxNDcxMDc2YzY4NTBjZDA4Y2JhYjQsMGZjMDkwMWNjYTJiYWU5ZTlmZGJiMDJkNTBkMDJmMTA5NGY3YjM2NjcyMDg2OTkxYjllODk3NjI2ZGM0ODVmMCxlZTVmN2FiZDY5ODFiYjAyNTU2MzJjZDhmNDkyODM0NTFiNGIxODg0NGQxMjA0MGI0NGVlMDBmMDdiOGZlMmM2Igp9",
       "configContent": null,
       "protocol": "vmess",
@@ -3719,7 +1294,7 @@
         "ip": "158.160.211.200",
         "port": 11556,
         "transport": "tcp",
-        "latencyMs": 1487,
+        "latencyMs": 241,
         "tunnel": {
           "status": "verified",
           "exitIp": "158.160.211.200",
@@ -3728,7 +1303,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 875,
+            "downloadedBytes": 869,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -3736,15 +1311,15 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 6401
+                "latencyMs": 1123
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 316,
+                "bytes": 310,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 5531
+                "latencyMs": 1059
               }
             ]
           },
@@ -3754,41 +1329,275 @@
             "bytes": 42090,
             "httpStatus": 200,
             "tlsVerified": false,
-            "latencyMs": 1477
+            "latencyMs": 1791
           },
-          "latencyMs": 14646
+          "latencyMs": 5210
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Stockholm · Xray 1",
-      "flag": "🇸🇪",
-      "countryCode": "SE",
+      "name": "Москва · Xray 2",
+      "flag": "🇷🇺",
+      "countryCode": "RU",
       "isOptimal": false,
-      "ping": 9796,
-      "configUrl": "vless://94877739-3af6-4fbb-85b6-ca6fe86c7696@app.goonars.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=app.goonars.com&pbk=Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0&sid=95e51c18&spx=%2F&type=tcp&fp=firefox#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "ping": 24627,
+      "configUrl": "hysteria2://f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org:443?insecure=1&alpn=h3#%F0%9F%87%B7%F0%9F%87%BA%20Russia%2C%20Moscow%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "hysteria2",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "RU",
+      "city": "Moscow",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2a06:dd00:20::51",
+      "health": {
+        "status": "unverified-udp",
+        "host": "msk.frkn.org",
+        "ip": "94.198.54.132",
+        "port": 443,
+        "transport": "udp",
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2a06:dd00:20::51",
+          "countryCode": "RU",
+          "city": "Moscow",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 871,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5891
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5853
+              }
+            ]
+          },
+          "requiredSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": true,
+            "bytes": 42090,
+            "httpStatus": 200,
+            "tlsVerified": false,
+            "latencyMs": 6107
+          },
+          "latencyMs": 24627
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Ankara · Xray 1",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
+      "isOptimal": false,
+      "ping": 10285,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=safari#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": true,
       "xtlsVisionFlow": "xtls-rprx-vision",
       "declaredCountryCode": "SE",
-      "city": "Stockholm",
+      "city": "Ankara",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "88.216.223.41",
+      "exitIp": "144.31.128.106",
       "health": {
         "status": "reachable",
-        "host": "app.goonars.com",
-        "ip": "88.216.223.41",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 413,
+        "latencyMs": 233,
         "tunnel": {
           "status": "verified",
-          "exitIp": "88.216.223.41",
-          "countryCode": "SE",
-          "city": "Stockholm",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 868,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3976
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2943
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 10285
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Ankara · Xray 2",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
+      "isOptimal": false,
+      "ping": 15825,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=ios#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "SE",
+      "city": "Ankara",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "144.31.128.106",
+      "health": {
+        "status": "reachable",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 229,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 869,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6876
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 310,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3005
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 15825
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Ankara · Xray 3",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
+      "isOptimal": false,
+      "ping": 16384,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=edge#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "SE",
+      "city": "Ankara",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "144.31.128.106",
+      "health": {
+        "status": "reachable",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 230,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 868,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 559,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6785
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2442
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 16384
+        },
+        "checkedAt": "2026-09-28T09:58:19Z"
+      }
+    },
+    {
+      "name": "Ankara · Xray 4",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
+      "isOptimal": false,
+      "ping": 16420,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "SE",
+      "city": "Ankara",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "144.31.128.106",
+      "health": {
+        "status": "reachable",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 231,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -3800,7 +1609,7 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1077
+                "latencyMs": 7027
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3808,48 +1617,48 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1074
+                "latencyMs": 2446
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 9796
+          "latencyMs": 16420
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Stockholm · Xray 2",
-      "flag": "🇸🇪",
-      "countryCode": "SE",
+      "name": "Ankara · Xray 5",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
       "isOptimal": false,
-      "ping": 23920,
-      "configUrl": "vless://94877739-3af6-4fbb-85b6-ca6fe86c7696@88.216.223.41:443?encryption=none&flow=xtls-rprx-vision&pbk=Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0&security=reality&sid=95e51c18&sni=app.goonars.com&type=tcp&fp=firefox#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "ping": 22625,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=qq#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": true,
       "xtlsVisionFlow": "xtls-rprx-vision",
       "declaredCountryCode": "SE",
-      "city": "Stockholm",
+      "city": "Ankara",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "88.216.223.41",
+      "exitIp": "144.31.128.106",
       "health": {
         "status": "reachable",
-        "host": "88.216.223.41",
-        "ip": "88.216.223.41",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 208,
+        "latencyMs": 231,
         "tunnel": {
           "status": "verified",
-          "exitIp": "88.216.223.41",
-          "countryCode": "SE",
-          "city": "Stockholm",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 175631,
+            "downloadedBytes": 870,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -3857,194 +1666,56 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1753
+                "latencyMs": 7296
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18017
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 175072,
+                "bytes": 311,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1807
+                "latencyMs": 11513
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 23920
+          "latencyMs": 22625
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
-      "name": "Stockholm · Xray 3",
-      "flag": "🇸🇪",
-      "countryCode": "SE",
+      "name": "Ankara · Xray 6",
+      "flag": "🇹🇷",
+      "countryCode": "TR",
       "isOptimal": false,
-      "ping": 29967,
-      "configUrl": "vless://94877739-3af6-4fbb-85b6-ca6fe86c7696@88.216.223.41:443?encryption=none&flow=xtls-rprx-vision&pbk=Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0&security=reality&sid=95e51c18&sni=app.goonars.com&type=tcp&fp=random#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "ping": 31566,
+      "configUrl": "vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@85.192.48.142:443?encryption=none&flow=xtls-rprx-vision&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=nvidia.com&type=tcp&fp=firefox#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": true,
       "xtlsVisionFlow": "xtls-rprx-vision",
       "declaredCountryCode": "SE",
-      "city": "Stockholm",
+      "city": "Ankara",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "88.216.223.41",
+      "exitIp": "144.31.128.106",
       "health": {
         "status": "reachable",
-        "host": "88.216.223.41",
-        "ip": "88.216.223.41",
+        "host": "85.192.48.142",
+        "ip": "85.192.48.142",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 400,
+        "latencyMs": 230,
         "tunnel": {
           "status": "verified",
-          "exitIp": "88.216.223.41",
-          "countryCode": "SE",
-          "city": "Stockholm",
+          "exitIp": "144.31.128.106",
+          "countryCode": "TR",
+          "city": "Ankara",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 175387,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18018
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3926
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 175072,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1609
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 29967
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Stockholm · Xray 4",
-      "flag": "🇸🇪",
-      "countryCode": "SE",
-      "isOptimal": false,
-      "ping": 34334,
-      "configUrl": "vless://94877739-3af6-4fbb-85b6-ca6fe86c7696@app.goonars.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=app.goonars.com&pbk=Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0&sid=95e51c18&spx=%2F&type=tcp&fp=random#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "SE",
-      "city": "Stockholm",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "88.216.223.41",
-      "health": {
-        "status": "reachable",
-        "host": "app.goonars.com",
-        "ip": "88.216.223.41",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 208,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "88.216.223.41",
-          "countryCode": "SE",
-          "city": "Stockholm",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 175385,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18022
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 863
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 175072,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 13764
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 34334
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Singapore · Xray 1",
-      "flag": "🇸🇬",
-      "countryCode": "SG",
-      "isOptimal": false,
-      "ping": 5951,
-      "configUrl": "vless://38415950-f815-4ca8-94d0-6cbf22be7566@170.114.52.22:443?security=tls&sni=asia.csmasterofficial.store&type=ws&headerType=none&host=asia.csmasterofficial.store&path=%2Fcs&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Pioneer%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "SG",
-      "city": "Singapore",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "146.190.105.228",
-      "health": {
-        "status": "reachable",
-        "host": "170.114.52.22",
-        "ip": "170.114.52.22",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "146.190.105.228",
-          "countryCode": "SG",
-          "city": "Singapore",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 875,
+            "downloadedBytes": 870,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -4052,193 +1723,22 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1901
+                "latencyMs": 6212
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 316,
+                "bytes": 311,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1997
+                "latencyMs": 14334
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 5951
+          "latencyMs": 31566
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Singapore · Xray 2",
-      "flag": "🇸🇬",
-      "countryCode": "SG",
-      "isOptimal": false,
-      "ping": 5979,
-      "configUrl": "vless://38415950-f815-4ca8-94d0-6cbf22be7566@170.114.52.22:443?security=tls&sni=asia.csmasterofficial.store&type=ws&headerType=none&host=asia.csmasterofficial.store&path=%2Fcs&fp=qq#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Pioneer%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "SG",
-      "city": "Singapore",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "146.190.105.228",
-      "health": {
-        "status": "reachable",
-        "host": "170.114.52.22",
-        "ip": "170.114.52.22",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "146.190.105.228",
-          "countryCode": "SG",
-          "city": "Singapore",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 875,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1885
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 316,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1876
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 5979
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "Singapore · Xray 3",
-      "flag": "🇸🇬",
-      "countryCode": "SG",
-      "isOptimal": false,
-      "ping": 6014,
-      "configUrl": "vless://38415950-f815-4ca8-94d0-6cbf22be7566@170.114.52.22:443?security=tls&sni=asia.csmasterofficial.store&type=ws&headerType=none&host=asia.csmasterofficial.store&path=%2Fcs&fp=safari#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Pioneer%29%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "SG",
-      "city": "Singapore",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "146.190.105.228",
-      "health": {
-        "status": "reachable",
-        "host": "170.114.52.22",
-        "ip": "170.114.52.22",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "146.190.105.228",
-          "countryCode": "SG",
-          "city": "Singapore",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 874,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1916
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1988
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6014
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
-      }
-    },
-    {
-      "name": "San Francisco · Xray 1",
-      "flag": "🇺🇸",
-      "countryCode": "US",
-      "isOptimal": false,
-      "ping": 13180,
-      "configUrl": "vless://900e2cca-4798-47f6-b972-5288a77c8093@45.150.192.26:42411?encryption=none&host=www.oracle.com&pbk=r3JIlDorHc3OSNWDPs4ZqJ-HbNj5JVPvSKP_fuU1Fw4&security=reality&sid=f578f2a1&sni=www.oracle.com&type=xhttp&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Fremont%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "US",
-      "city": "San Francisco",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2a0d:6c2:6:7e5::",
-      "health": {
-        "status": "reachable",
-        "host": "45.150.192.26",
-        "ip": "45.150.192.26",
-        "port": 42411,
-        "transport": "tcp",
-        "latencyMs": 179,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2a0d:6c2:6:7e5::",
-          "countryCode": "US",
-          "city": "San Francisco",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 874,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 559,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1040
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1003
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 13180
-        },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     },
     {
@@ -4246,8 +1746,8 @@
       "flag": "🇺🇸",
       "countryCode": "US",
       "isOptimal": false,
-      "ping": 50881,
-      "configUrl": "vmess://eyJ2IjoiMiIsInBzIjoi8J+HuvCfh7ggVW5pdGVkIFN0YXRlcywgU3QgTG91aXMgKERvd250b3duKSB8IFtCTF0iLCJhZGQiOiIxNzIuNjQuODAuMSIsInBvcnQiOiI4NDQzIiwiaWQiOiI2MDQ0MTU0OC1iNjhlLTQzYjItODE5MS1lM2I4ODRiZTRiM2MiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJob3N0IjoidjJyYXkxLmRvemFwcC54eXoiLCJwYXRoIjoiL2xNbnNaVU40LyIsInRscyI6InRscyIsInNuaSI6IiIsImFscG4iOiIiLCJmcCI6IiJ9",
+      "ping": 47389,
+      "configUrl": "vmess://eyJ2IjoiMiIsInBzIjoi8J+HuvCfh7ggVW5pdGVkIFN0YXRlcywgU3QgTG91aXMgKERvd250b3duKSB8IFtCTF0iLCJhZGQiOiIxNzIuNjQuODAuMSIsInBvcnQiOiI4NDQzIiwiaWQiOiI2MDQ0MTU0OC1iNjhlLTQzYjItODE5MS1lM2I4ODRiZTRiM2MiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ0bHMiOiJ0bHMiLCJhbHBuIjoiIiwic25pIjoidjJyYXkxLmRvemFwcC54eXoiLCJwYXRoIjoiL2xNbnNaVU40LyIsImhvc3QiOiJ2MnJheTEuZG96YXBwLnh5eiIsImZwIjoiIn0=",
       "configContent": null,
       "protocol": "vmess",
       "isPremium": false,
@@ -4272,7 +1772,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 175631,
+            "downloadedBytes": 867,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -4280,30 +1780,22 @@
                 "bytes": 559,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 14410
+                "latencyMs": 17567
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18022
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 175072,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 13950
+                "latencyMs": 16406
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 50881
+          "latencyMs": 47389
         },
-        "checkedAt": "2026-09-28T08:24:51Z"
+        "checkedAt": "2026-09-28T09:58:19Z"
       }
     }
   ]
