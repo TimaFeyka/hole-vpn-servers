@@ -1,55 +1,169 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T16:48:45Z",
+  "generatedAt": "2026-10-07T17:37:37Z",
   "checkScope": "xray-real-tunnel; openvpn-real-tunnel; https-traffic-verified",
   "counts": {
-    "openvpn": 47,
-    "xray": 60,
-    "total": 107,
-    "unverifiedUdp": 22,
-    "candidates": 303
+    "openvpn": 46,
+    "xray": 41,
+    "total": 87,
+    "unverifiedUdp": 27,
+    "candidates": 350
   },
   "sources": {
     "openvpn": "https://www.vpngate.net/api/iphone/",
     "xray": "https://github.com/igareck/vpn-configs-for-russia",
     "pinnedLocalXray": 1,
-    "xrayRevision": "0a1c56247244d11226ac61e4fa15a188d60e9ebd"
+    "xrayRevision": "9bc613d93e49f9c3d3707219e0b482ab3990e692"
   },
   "geoSource": "sapics/ip-location-db server-country (PDDL) + DB-IP Lite city (CC BY 4.0)",
   "networkGeoFallback": "ipwho.is for missing or conflicting city records",
   "servers": [
     {
-      "name": "Helsinki · Xray 1",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
+      "name": "Vienna · Xray 1",
+      "flag": "🇦🇹",
+      "countryCode": "AT",
       "isOptimal": false,
-      "ping": 9959,
-      "configUrl": "vless://9a0e84f8-4b58-477f-99da-5fac5a2e58e8@36a466g.fi1.h1clayd.click:443?type=grpc&security=reality&pbk=pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg&sid=b3c9d0c6bdd114a6&sni=36a466g.fi1.h1clayd.click&serviceName=0adb9638509b&spx=%2F&fp=qq#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "ping": 24538,
+      "configUrl": "vless://9ebf4fda-7395-4800-b42f-b2dda649880a@80.66.89.192:16443?encryption=none&flow=xtls-rprx-vision&pbk=1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ&security=reality&sid=d2061bb1&sni=ya.ru&type=tcp&fp=safari#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "AT",
+      "city": "Vienna",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "150.241.72.252",
+      "health": {
+        "status": "unreachable",
+        "host": "80.66.89.192",
+        "ip": "80.66.89.192",
+        "port": 16443,
+        "transport": "tcp",
+        "latencyMs": null,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "150.241.72.252",
+          "countryCode": "AT",
+          "city": "Vienna",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4525
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 8866
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 24538
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Vienna · Xray 2",
+      "flag": "🇦🇹",
+      "countryCode": "AT",
+      "isOptimal": false,
+      "ping": 35371,
+      "configUrl": "vless://9ebf4fda-7395-4800-b42f-b2dda649880a@gw1.edgemedia.lol:16443?security=reality&encryption=none&pbk=1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=ya.ru&sid=d2061bb1&fp=firefox#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "AT",
+      "city": "Vienna",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "150.241.72.252",
+      "health": {
+        "status": "unreachable",
+        "host": "gw1.edgemedia.lol",
+        "ip": "80.66.89.192",
+        "port": 16443,
+        "transport": "tcp",
+        "latencyMs": null,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "150.241.72.252",
+          "countryCode": "AT",
+          "city": "Vienna",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 13048
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 9018
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 35371
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Berlin · Xray 1",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
+      "isOptimal": false,
+      "ping": 10588,
+      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc&fp=ios#%F0%9F%87%B3%F0%9F%87%B4%20Norway%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
+      "declaredCountryCode": "NO",
+      "city": "Berlin",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "65.21.146.8",
+      "exitIp": "144.31.217.4",
       "health": {
         "status": "reachable",
-        "host": "36a466g.fi1.h1clayd.click",
-        "ip": "45.133.151.188",
-        "port": 443,
+        "host": "176.108.252.139",
+        "ip": "176.108.252.139",
+        "port": 9881,
         "transport": "tcp",
-        "latencyMs": 290,
+        "latencyMs": 223,
         "tunnel": {
           "status": "verified",
-          "exitIp": "65.21.146.8",
-          "countryCode": "FI",
-          "city": "Helsinki",
+          "exitIp": "144.31.217.4",
+          "countryCode": "DE",
+          "city": "Berlin",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 886,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -57,56 +171,56 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3514
+                "latencyMs": 2988
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1860
+                "latencyMs": 2170
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 9959
+          "latencyMs": 10588
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Helsinki · Xray 2",
-      "flag": "🇫🇮",
-      "countryCode": "FI",
+      "name": "Berlin · Xray 2",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
       "isOptimal": false,
-      "ping": 13089,
-      "configUrl": "vless://9a0e84f8-4b58-477f-99da-5fac5a2e58e8@36a466g.fi1.h1clayd.click:443?type=grpc&security=reality&pbk=pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg&sid=b3c9d0c6bdd114a6&sni=36a466g.fi1.h1clayd.click&serviceName=0adb9638509b&spx=%2F&fp=safari#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "ping": 21968,
+      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.252.139:9881?encryption=none&mode=gun&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc&fp=edge#%F0%9F%87%B3%F0%9F%87%B4%20Norway%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "FI",
-      "city": "Helsinki",
+      "declaredCountryCode": "NO",
+      "city": "Berlin",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "65.21.146.8",
+      "exitIp": "144.31.217.4",
       "health": {
         "status": "reachable",
-        "host": "36a466g.fi1.h1clayd.click",
-        "ip": "45.133.151.188",
-        "port": 443,
+        "host": "176.108.252.139",
+        "ip": "176.108.252.139",
+        "port": 9881,
         "transport": "tcp",
-        "latencyMs": 280,
+        "latencyMs": 223,
         "tunnel": {
           "status": "verified",
-          "exitIp": "65.21.146.8",
-          "countryCode": "FI",
-          "city": "Helsinki",
+          "exitIp": "144.31.217.4",
+          "countryCode": "DE",
+          "city": "Berlin",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 888,
+            "downloadedBytes": 886,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -114,136 +228,22 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 5569
+                "latencyMs": 17005
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 311,
+                "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2745
+                "latencyMs": 2826
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 13089
+          "latencyMs": 21968
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 1",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 2987,
-      "configUrl": "trojan://humanity@45.205.0.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.205.0.6",
-        "ip": "45.205.0.6",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 849
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1054
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 2987
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 2",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 3830,
-      "configUrl": "trojan://humanity@45.205.0.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.205.0.6",
-        "ip": "45.205.0.6",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 885,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 848
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1866
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3830
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -251,8 +251,8 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 4472,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
+      "ping": 5166,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -277,7 +277,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 896,
+            "downloadedBytes": 897,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -285,22 +285,22 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1600
+                "latencyMs": 1873
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 319,
+                "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1346
+                "latencyMs": 1724
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 4472
+          "latencyMs": 5166
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -308,8 +308,65 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 4521,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
+      "ping": 5999,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Gravelines",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2001:41d0:a:43aa::1",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2001:41d0:a:43aa::1",
+          "countryCode": "FR",
+          "city": "Gravelines",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 897,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1866
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 320,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2379
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 5999
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Gravelines · Xray 3",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 6024,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -334,7 +391,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 896,
+            "downloadedBytes": 892,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -342,88 +399,31 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1441
+                "latencyMs": 1310
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 319,
+                "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1404
+                "latencyMs": 1390
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 4521
+          "latencyMs": 6024
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Paris · Xray 3",
+      "name": "Gravelines · Xray 4",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 4953,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 876
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1893
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4953
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Gravelines · Xray 3",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 5375,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
+      "ping": 6041,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -456,7 +456,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1579
+                "latencyMs": 2480
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -464,22 +464,22 @@
                 "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1380
+                "latencyMs": 2087
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 5375
+          "latencyMs": 6041
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Gravelines · Xray 4",
+      "name": "Gravelines · Xray 5",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 5707,
+      "ping": 6545,
       "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -505,7 +505,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 892,
+            "downloadedBytes": 896,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -513,31 +513,88 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2407
+                "latencyMs": 1767
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 315,
+                "bytes": 319,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1407
+                "latencyMs": 1404
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 5707
+          "latencyMs": 6545
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Gravelines · Xray 5",
+      "name": "Gravelines · Xray 6",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 5800,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
+      "ping": 7421,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Gravelines",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2001:41d0:a:43aa::1",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2001:41d0:a:43aa::1",
+          "countryCode": "FR",
+          "city": "Gravelines",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 896,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4042
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 319,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1351
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 7421
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Gravelines · Xray 7",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 7651,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -570,7 +627,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1343
+                "latencyMs": 4450
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -578,185 +635,14 @@
                 "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1596
+                "latencyMs": 1256
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 5800
+          "latencyMs": 7651
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Gravelines · Xray 6",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 6270,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Gravelines",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2001:41d0:a:43aa::1",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2001:41d0:a:43aa::1",
-          "countryCode": "FR",
-          "city": "Gravelines",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1785
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1363
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6270
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Gravelines · Xray 7",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 6466,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Gravelines",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2001:41d0:a:43aa::1",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2001:41d0:a:43aa::1",
-          "countryCode": "FR",
-          "city": "Gravelines",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1338
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3596
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6466
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 4",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 6714,
-      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.80.111.7",
-        "ip": "45.80.111.7",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2822
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 833
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6714
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -764,7 +650,7 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 6871,
+      "ping": 7895,
       "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -781,7 +667,7 @@
         "ip": "8.47.69.0",
         "port": 2053,
         "transport": "tcp",
-        "latencyMs": 3,
+        "latencyMs": 5,
         "tunnel": {
           "status": "verified",
           "exitIp": "2001:41d0:a:43aa::1",
@@ -798,7 +684,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1609
+                "latencyMs": 4646
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -806,413 +692,14 @@
                 "bytes": 319,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3499
+                "latencyMs": 1422
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 6871
+          "latencyMs": 7895
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 5",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 7152,
-      "configUrl": "trojan://humanity@45.205.0.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.205.0.6",
-        "ip": "45.205.0.6",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1044
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 991
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 7152
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Roubaix · Xray 1",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 8165,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Roubaix",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "37.187.133.170",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "37.187.133.170",
-          "countryCode": "FR",
-          "city": "Roubaix",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 896,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2848
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 319,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2761
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 8165
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 6",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 11151,
-      "configUrl": "trojan://humanity@45.205.0.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.205.0.6",
-        "ip": "45.205.0.6",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 876
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 9127
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 11151
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 7",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 11802,
-      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.80.111.7",
-        "ip": "45.80.111.7",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1794
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8917
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 11802
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 8",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 12184,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 9126
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 990
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 12184
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 9",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 13118,
-      "configUrl": "trojan://humanity@45.205.0.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.205.0.6",
-        "ip": "45.205.0.6",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 983
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 11070
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 13118
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 10",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 14856,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 5,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 11938
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 846
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 14856
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -1220,178 +707,7 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 15510,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Gravelines",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2001:41d0:a:43aa::1",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2001:41d0:a:43aa::1",
-          "countryCode": "FR",
-          "city": "Gravelines",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 897,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6391
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 320,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1575
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 15510
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 11",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 16259,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 934
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1121
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 16259
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 12",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 16635,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 6,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 889,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 7522
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 894
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 16635
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Gravelines · Xray 10",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 16667,
+      "ping": 9836,
       "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -1425,7 +741,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 5187
+                "latencyMs": 5059
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -1433,14 +749,71 @@
                 "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3214
+                "latencyMs": 1309
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 16667
+          "latencyMs": 9836
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Gravelines · Xray 10",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 11218,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Gravelines",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2001:41d0:a:43aa::1",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2001:41d0:a:43aa::1",
+          "countryCode": "FR",
+          "city": "Gravelines",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 897,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4093
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 320,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5232
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 11218
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -1448,8 +821,8 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 16900,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "ping": 11930,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&packetEncoding=xudp&sni=vless.api-music-fa.com&encryption=none&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -1482,7 +855,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 6177
+                "latencyMs": 2909
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -1490,14 +863,14 @@
                 "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1362
+                "latencyMs": 7133
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 16900
+          "latencyMs": 11930
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -1505,7 +878,121 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 19874,
+      "ping": 14584,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Gravelines",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2001:41d0:a:43aa::1",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2001:41d0:a:43aa::1",
+          "countryCode": "FR",
+          "city": "Gravelines",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 896,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5741
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 319,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6644
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 14584
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Gravelines · Xray 13",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 15525,
+      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Gravelines",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2001:41d0:a:43aa::1",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2001:41d0:a:43aa::1",
+          "countryCode": "FR",
+          "city": "Gravelines",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 896,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5675
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 319,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2601
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 15525
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Gravelines · Xray 14",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 17911,
       "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -1522,7 +1009,7 @@
         "ip": "8.47.69.0",
         "port": 2053,
         "transport": "tcp",
-        "latencyMs": 3,
+        "latencyMs": 5,
         "tunnel": {
           "status": "verified",
           "exitIp": "2001:41d0:a:43aa::1",
@@ -1539,7 +1026,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 6334
+                "latencyMs": 7364
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -1547,23 +1034,80 @@
                 "bytes": 320,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1452
+                "latencyMs": 6893
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 19874
+          "latencyMs": 17911
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Paris · Xray 13",
+      "name": "Paris · Xray 1",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 21069,
-      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "ping": 29797,
+      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "141.193.213.172",
+        "ip": "141.193.213.172",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 12890
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 765
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 29797
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 2",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 32373,
+      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -1588,379 +1132,38 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 886,
+            "downloadedBytes": 112736,
             "checks": [
               {
                 "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 11140
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8801
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 21069
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Gravelines · Xray 13",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 23393,
-      "configUrl": "vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053/?type=ws&encryption=none&flow=&host=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&security=tls&sni=fr.api-music-fa.com&allowInsecure=0&insecure=0&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Gravelines",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2001:41d0:a:43aa::1",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "2001:41d0:a:43aa::1",
-          "countryCode": "FR",
-          "city": "Gravelines",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 897,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6382
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 320,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 7889
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 23393
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Hong Kong · Xray 1",
-      "flag": "🇭🇰",
-      "countryCode": "HK",
-      "isOptimal": false,
-      "ping": 3312,
-      "configUrl": "hysteria2://6ddb6a68-d5f5-ca30-3943-cf0c9876d50c@0499fc3f-tmkao0-tnnrly-g43g.nw4.hyhuawei.com:443?insecure=1&sni=0499fc3f-tmkao0-tnnrly-g43g.nw4.hyhuawei.com#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Central%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "hysteria2",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "HK",
-      "city": "Hong Kong",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "203.198.86.243",
-      "health": {
-        "status": "unverified-udp",
-        "host": "0499fc3f-tmkao0-tnnrly-g43g.nw4.hyhuawei.com",
-        "ip": "203.198.86.243",
-        "port": 443,
-        "transport": "udp",
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "203.198.86.243",
-          "countryCode": "HK",
-          "city": "Hong Kong",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 779
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 786
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 3312
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Rome · Xray 1",
-      "flag": "🇮🇹",
-      "countryCode": "IT",
-      "isOptimal": false,
-      "ping": 5597,
-      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@45.132.176.225:9881?encryption=none&security=reality&sni=dl.google.com&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&sid=aabb&type=grpc&serviceName=grpc-tunnel&fp=random#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "IT",
-      "city": "Rome",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "150.241.73.153",
-      "health": {
-        "status": "unreachable",
-        "host": "45.132.176.225",
-        "ip": "45.132.176.225",
-        "port": 9881,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "150.241.73.153",
-          "countryCode": "IT",
-          "city": "Rome",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1922
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1424
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 5597
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Rome · Xray 2",
-      "flag": "🇮🇹",
-      "countryCode": "IT",
-      "isOptimal": false,
-      "ping": 10888,
-      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@45.132.176.225:9881?encryption=none&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc&fp=edge#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "IT",
-      "city": "Rome",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "150.241.73.153",
-      "health": {
-        "status": "unreachable",
-        "host": "45.132.176.225",
-        "ip": "45.132.176.225",
-        "port": 9881,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "150.241.73.153",
-          "countryCode": "IT",
-          "city": "Rome",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3861
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3248
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 10888
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Rome · Xray 3",
-      "flag": "🇮🇹",
-      "countryCode": "IT",
-      "isOptimal": false,
-      "ping": 15591,
-      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@45.132.176.225:9881?encryption=none&security=reality&sni=dl.google.com&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&sid=aabb&type=grpc&serviceName=grpc-tunnel&fp=ios#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "IT",
-      "city": "Rome",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "150.241.73.153",
-      "health": {
-        "status": "unreachable",
-        "host": "45.132.176.225",
-        "ip": "45.132.176.225",
-        "port": 9881,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "150.241.73.153",
-          "countryCode": "IT",
-          "city": "Rome",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8176
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3897
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 15591
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Rome · Xray 4",
-      "flag": "🇮🇹",
-      "countryCode": "IT",
-      "isOptimal": false,
-      "ping": 45934,
-      "configUrl": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@45.132.176.225:9881?encryption=none&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&security=reality&serviceName=grpc-tunnel&sid=aa&sni=dl.google.com&type=grpc&fp=ios#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "IT",
-      "city": "Rome",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "150.241.73.153",
-      "health": {
-        "status": "unreachable",
-        "host": "45.132.176.225",
-        "ip": "45.132.176.225",
-        "port": 9881,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "150.241.73.153",
-          "countryCode": "IT",
-          "city": "Rome",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 124471,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8778
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": false,
                 "bytes": 0,
                 "httpStatus": 0,
                 "tlsVerified": true,
-                "latencyMs": 18024
+                "latencyMs": 18022
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 862
               },
               {
                 "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 123894,
+                "bytes": 112428,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 16987
+                "latencyMs": 4384
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 45934
+          "latencyMs": 32373
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -1968,121 +1171,7 @@
       "flag": "🇰🇷",
       "countryCode": "KR",
       "isOptimal": false,
-      "ping": 4463,
-      "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=random#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "KR",
-      "city": "Seoul",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "47.80.19.173",
-      "health": {
-        "status": "reachable",
-        "host": "47.80.19.173",
-        "ip": "47.80.19.173",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 2376,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "47.80.19.173",
-          "countryCode": "KR",
-          "city": "Seoul",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 884,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1442
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1436
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4463
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Seoul · Xray 2",
-      "flag": "🇰🇷",
-      "countryCode": "KR",
-      "isOptimal": false,
-      "ping": 4559,
-      "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=qq#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "KR",
-      "city": "Seoul",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "47.80.19.173",
-      "health": {
-        "status": "reachable",
-        "host": "47.80.19.173",
-        "ip": "47.80.19.173",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 298,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "47.80.19.173",
-          "countryCode": "KR",
-          "city": "Seoul",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1432
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1524
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4559
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Seoul · Xray 3",
-      "flag": "🇰🇷",
-      "countryCode": "KR",
-      "isOptimal": false,
-      "ping": 4569,
+      "ping": 12554,
       "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=safari#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -2099,7 +1188,7 @@
         "ip": "47.80.19.173",
         "port": 2053,
         "transport": "tcp",
-        "latencyMs": 300,
+        "latencyMs": 1337,
         "tunnel": {
           "status": "verified",
           "exitIp": "47.80.19.173",
@@ -2108,7 +1197,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 884,
+            "downloadedBytes": 885,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2116,30 +1205,87 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1434
+                "latencyMs": 2557
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 307,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1455
+                "latencyMs": 5606
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 4569
+          "latencyMs": 12554
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Seoul · Xray 4",
+      "name": "Seoul · Xray 2",
       "flag": "🇰🇷",
       "countryCode": "KR",
       "isOptimal": false,
-      "ping": 4579,
+      "ping": 18604,
+      "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=qq#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "KR",
+      "city": "Seoul",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "47.80.19.173",
+      "health": {
+        "status": "reachable",
+        "host": "47.80.19.173",
+        "ip": "47.80.19.173",
+        "port": 2053,
+        "transport": "tcp",
+        "latencyMs": 1355,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "47.80.19.173",
+          "countryCode": "KR",
+          "city": "Seoul",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 12522
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3493
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 18604
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Seoul · Xray 3",
+      "flag": "🇰🇷",
+      "countryCode": "KR",
+      "isOptimal": false,
+      "ping": 21955,
       "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=edge#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
@@ -2156,7 +1302,7 @@
         "ip": "47.80.19.173",
         "port": 2053,
         "transport": "tcp",
-        "latencyMs": 323,
+        "latencyMs": 1332,
         "tunnel": {
           "status": "verified",
           "exitIp": "47.80.19.173",
@@ -2165,7 +1311,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 890,
+            "downloadedBytes": 889,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2173,136 +1319,22 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1556
+                "latencyMs": 11450
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 313,
+                "bytes": 312,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1440
+                "latencyMs": 7912
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 4579
+          "latencyMs": 21955
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Seoul · Xray 5",
-      "flag": "🇰🇷",
-      "countryCode": "KR",
-      "isOptimal": false,
-      "ping": 4591,
-      "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "KR",
-      "city": "Seoul",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "47.80.19.173",
-      "health": {
-        "status": "reachable",
-        "host": "47.80.19.173",
-        "ip": "47.80.19.173",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 298,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "47.80.19.173",
-          "countryCode": "KR",
-          "city": "Seoul",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 884,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1530
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1462
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4591
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Seoul · Xray 6",
-      "flag": "🇰🇷",
-      "countryCode": "KR",
-      "isOptimal": false,
-      "ping": 4827,
-      "configUrl": "vless://319d5ffb-57e8-4bbd-ac0c-5d55d0c253de@47.80.19.173:2053?encryption=none&flow=xtls-rprx-vision&security=reality&sni=gateway.icloud.com&pbk=DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms&sid=3c4041d3&type=tcp&fp=firefox#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Yongsan-dong%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": true,
-      "xtlsVisionFlow": "xtls-rprx-vision",
-      "declaredCountryCode": "KR",
-      "city": "Seoul",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "47.80.19.173",
-      "health": {
-        "status": "reachable",
-        "host": "47.80.19.173",
-        "ip": "47.80.19.173",
-        "port": 2053,
-        "transport": "tcp",
-        "latencyMs": 298,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "47.80.19.173",
-          "countryCode": "KR",
-          "city": "Seoul",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 885,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1633
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1573
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 4827
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -2310,8 +1342,8 @@
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 3682,
-      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 5038,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=1&sni=www.volumeroot.com&type=ws&host=&path=%2Fassignment&alpn=http%2F1.1&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -2320,17 +1352,17 @@
       "declaredCountryCode": "NL",
       "city": "Amsterdam",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
+      "exitIp": "51.158.244.35",
       "health": {
         "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
         "port": 443,
         "transport": "tcp",
         "latencyMs": 3,
         "tunnel": {
           "status": "verified",
-          "exitIp": "51.158.182.140",
+          "exitIp": "51.158.244.35",
           "countryCode": "NL",
           "city": "Amsterdam",
           "sites": {
@@ -2344,7 +1376,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1823
+                "latencyMs": 1033
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2352,14 +1384,14 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 883
+                "latencyMs": 2664
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 3682
+          "latencyMs": 5038
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
@@ -2367,349 +1399,7 @@
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 5855,
-      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2028
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1150
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 5855
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 3",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 6915,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4130
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 932
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 6915
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 4",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 7598,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&Host=www.volumeroot.com&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3927
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1120
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 7598
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 5",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 8128,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 885,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3069
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 308,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1728
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 8128
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 6",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 9145,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3472
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2190
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 9145
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 7",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 10617,
-      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3385
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 5954
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 10617
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 8",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 11136,
+      "ping": 6713,
       "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
@@ -2726,7 +1416,7 @@
         "ip": "188.42.145.180",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 3,
+        "latencyMs": 4,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.158.244.35",
@@ -2735,7 +1425,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 890,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2743,31 +1433,31 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4531
+                "latencyMs": 1313
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2524
+                "latencyMs": 1911
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 11136
+          "latencyMs": 6713
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 9",
+      "name": "Amsterdam · Xray 3",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 11722,
-      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 8270,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -2783,7 +1473,7 @@
         "ip": "188.42.145.180",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 5,
+        "latencyMs": 3,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.158.244.35",
@@ -2800,7 +1490,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3789
+                "latencyMs": 3615
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2808,23 +1498,23 @@
                 "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1759
+                "latencyMs": 1191
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 11722
+          "latencyMs": 8270
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 10",
+      "name": "Amsterdam · Xray 4",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 13398,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 8470,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&host=www.volumeroot.com&allowInsecure=1&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -2857,7 +1547,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 9810
+                "latencyMs": 4022
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2865,23 +1555,23 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2171
+                "latencyMs": 1674
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 13398
+          "latencyMs": 8470
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 11",
+      "name": "Amsterdam · Xray 5",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 15073,
-      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 9999,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -2890,23 +1580,23 @@
       "declaredCountryCode": "NL",
       "city": "Amsterdam",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
+      "exitIp": "51.158.244.35",
       "health": {
         "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 3,
+        "latencyMs": 4,
         "tunnel": {
           "status": "verified",
-          "exitIp": "51.158.182.140",
+          "exitIp": "51.158.244.35",
           "countryCode": "NL",
           "city": "Amsterdam",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 890,
+            "downloadedBytes": 885,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2914,88 +1604,31 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3920
+                "latencyMs": 2115
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 313,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2019
+                "latencyMs": 2675
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 15073
+          "latencyMs": 9999
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 12",
+      "name": "Amsterdam · Xray 6",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 17311,
-      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1221
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4018
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 17311
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 13",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 17949,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 11016,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&host=www.volumeroot.com&allowInsecure=1&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -3028,7 +1661,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3480
+                "latencyMs": 2748
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3036,23 +1669,80 @@
                 "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 10595
+                "latencyMs": 4488
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 17949
+          "latencyMs": 11016
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 14",
+      "name": "Amsterdam · Xray 7",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 18169,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&Host=www.volumeroot.com&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 11371,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 886,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4537
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4497
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 11371
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 8",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 12703,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -3085,7 +1775,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 8444
+                "latencyMs": 2609
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3093,23 +1783,137 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2723
+                "latencyMs": 8921
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 18169
+          "latencyMs": 12703
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 15",
+      "name": "Amsterdam · Xray 9",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 18906,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&host=www.volumeroot.com&allowInsecure=1&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 13209,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5880
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5079
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 13209
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 10",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 13791,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=1&sni=www.volumeroot.com&type=ws&host=&path=%2Fassignment&alpn=http%2F1.1&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5701
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6843
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 13791
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 11",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 14124,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&Host=www.volumeroot.com&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -3142,7 +1946,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4818
+                "latencyMs": 2527
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3150,136 +1954,22 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 5480
+                "latencyMs": 9301
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 18906
+          "latencyMs": 14124
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 16",
+      "name": "Amsterdam · Xray 12",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 20796,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&Host=www.volumeroot.com&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.244.35",
-      "health": {
-        "status": "reachable",
-        "host": "188.42.145.180",
-        "ip": "188.42.145.180",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.244.35",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4654
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 11345
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 20796
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 17",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 24426,
-      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Amsterdam",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Amsterdam",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2267
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 9041
-              }
-            ]
-          },
-          "requiredSite": null,
-          "latencyMs": 24426
-        },
-        "checkedAt": "2026-10-07T16:48:45Z"
-      }
-    },
-    {
-      "name": "Amsterdam · Xray 18",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 25323,
+      "ping": 14670,
       "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&host=www.volumeroot.com&allowInsecure=1&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
@@ -3305,7 +1995,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 891,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -3313,31 +2003,31 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2928
+                "latencyMs": 2150
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 10008
+                "latencyMs": 9352
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 25323
+          "latencyMs": 14670
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 19",
+      "name": "Amsterdam · Xray 13",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 25691,
-      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 17246,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -3362,47 +2052,39 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 124202,
+            "downloadedBytes": 886,
             "checks": [
               {
                 "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 18032
+                "latencyMs": 10045
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1207
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 123894,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4730
+                "latencyMs": 2534
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 25691
+          "latencyMs": 17246
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     },
     {
-      "name": "Amsterdam · Xray 20",
+      "name": "Amsterdam · Xray 14",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 25869,
-      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 20582,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&allowInsecure=0&sni=www.volumeroot.com&type=ws&host=www.volumeroot.com&path=%2Fassignment&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -3418,7 +2100,7 @@
         "ip": "188.42.145.180",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 3,
+        "latencyMs": 4,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.158.244.35",
@@ -3435,7 +2117,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4324
+                "latencyMs": 16387
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -3443,14 +2125,250 @@
                 "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 10283
+                "latencyMs": 2084
               }
             ]
           },
           "requiredSite": null,
-          "latencyMs": 25869
+          "latencyMs": 20582
         },
-        "checkedAt": "2026-10-07T16:48:45Z"
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 15",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 21333,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3987
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 13193
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 21333
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 16",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 33654,
+      "configUrl": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumerOot.coM.&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 886,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 9435
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 10174
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 33654
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 17",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 34004,
+      "configUrl": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=%2Fassignment&Host=www.volumeroot.com&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.244.35",
+      "health": {
+        "status": "reachable",
+        "host": "188.42.145.180",
+        "ip": "188.42.145.180",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.244.35",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4132
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 13129
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 34004
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
+      }
+    },
+    {
+      "name": "Amsterdam · Xray 18",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 39255,
+      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Amsterdam",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 4,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Amsterdam",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 112738,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
+                "tlsVerified": true,
+                "latencyMs": 18017
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 310,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5938
+              },
+              {
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
+                "ok": true,
+                "bytes": 112428,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 10276
+              }
+            ]
+          },
+          "requiredSite": null,
+          "latencyMs": 39255
+        },
+        "checkedAt": "2026-10-07T17:37:37Z"
       }
     }
   ]
