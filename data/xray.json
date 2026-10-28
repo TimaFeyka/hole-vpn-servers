@@ -1,31 +1,95 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-28T10:46:38Z",
+  "generatedAt": "2026-10-28T11:26:28Z",
   "checkScope": "xray-real-tunnel; openvpn-real-tunnel; https-traffic-verified",
   "counts": {
-    "openvpn": 53,
-    "xray": 45,
-    "total": 98,
-    "unverifiedUdp": 20,
-    "candidates": 325
+    "openvpn": 57,
+    "xray": 59,
+    "total": 116,
+    "unverifiedUdp": 19,
+    "candidates": 293
   },
   "sources": {
     "openvpn": "https://www.vpngate.net/api/iphone/",
     "xray": "https://github.com/igareck/vpn-configs-for-russia",
     "pinnedLocalXray": 1,
-    "xrayRevision": "60eec2371005e79e6501952c2964e0152168c30a"
+    "xrayRevision": "5bad4f537ee72313f5416a1e74f436a407ee885b"
   },
   "geoSource": "sapics/ip-location-db server-country (PDDL) + DB-IP Lite city (CC BY 4.0)",
   "networkGeoFallback": "ipwho.is for missing or conflicting city records",
   "locationPolicy": "cabinet-access:RU/Moscow; otherwise tunnel-exit-geoip",
   "servers": [
     {
+      "name": "Frankfurt am Main · Xray 1",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
+      "isOptimal": false,
+      "ping": 9511,
+      "configUrl": "vless://6f433cf6-4221-48b2-ad29-01121952ef8a@193.23.218.107:443?Telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&security=reality&sni=yandex.ru&pbk=cBTZdCBwrYTTarw6B_lu2TN1M6_Lku68FfWCQT9svhc&sid=cb620aa2f04bce33&type=tcp&flow=xtls-rprx-vision&encryption=none&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BSNI-RU%5D%20yandex.ru",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "DE",
+      "city": "Frankfurt am Main",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "193.23.218.107",
+      "health": {
+        "status": "reachable",
+        "host": "193.23.218.107",
+        "ip": "193.23.218.107",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3294,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "193.23.218.107",
+          "countryCode": "DE",
+          "city": "Frankfurt am Main",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 897,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4291
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 320,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3504
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18022
+          },
+          "latencyMs": 9511
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
       "name": "Dusseldorf · Xray 1",
       "flag": "🇩🇪",
       "countryCode": "DE",
       "isOptimal": false,
-      "ping": 28011,
-      "configUrl": "vmess://eyJhZGQiOiJkZS56aG91LXl1ZmFuLmNvbSIsImFpZCI6IjAiLCJob3N0IjoiZGUuemhvdS15dWZhbi5jb20iLCJpZCI6ImYzOGU1OTFkLWQxM2EtNGMzMC05NzYzLTZiZTNhZDY1ZjNlYyIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+HqfCfh6ogR2VybWFueSwgRMO8c3NlbGRvcmYgfCBbQkxdIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJhbHBuIjoiIiwiZnAiOiIifQ==",
+      "ping": 14428,
+      "configUrl": "vmess://eyJhZGQiOiJkZS56aG91LXl1ZmFuLmNvbSIsImFscG4iOiIiLCJmcCI6IiIsImlkIjoiZjM4ZTU5MWQtZDEzYS00YzMwLTk3NjMtNmJlM2FkNjVmM2VjIiwibmV0IjoicmF3IiwicG9ydCI6IjQ0MyIsInBzIjoi8J+HqfCfh6ogR2VybWFueSwgRMO8c3NlbGRvcmYgfCDwn4yQIHwgW0JMXSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJwYXRoIjoiIn0=",
       "configContent": null,
       "protocol": "vmess",
       "isPremium": false,
@@ -41,7 +105,7 @@
         "ip": "45.131.153.56",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 962,
+        "latencyMs": 842,
         "tunnel": {
           "status": "verified",
           "exitIp": "45.131.153.56",
@@ -50,7 +114,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 886,
+            "downloadedBytes": 885,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -58,15 +122,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 15242
+                "latencyMs": 4013
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 309,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 6404
+                "latencyMs": 6033
               }
             ]
           },
@@ -76,11 +140,203 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 18017
+            "latencyMs": 18021
           },
-          "latencyMs": 28011
+          "latencyMs": 14428
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Dusseldorf · Xray 2",
+      "flag": "🇩🇪",
+      "countryCode": "DE",
+      "isOptimal": false,
+      "ping": 20051,
+      "configUrl": "vmess://eyJhZGQiOiJkZS56aG91LXl1ZmFuLmNvbSIsImFpZCI6IjAiLCJob3N0IjoiZGUuemhvdS15dWZhbi5jb20iLCJpZCI6ImYzOGU1OTFkLWQxM2EtNGMzMC05NzYzLTZiZTNhZDY1ZjNlYyIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoi8J+HqfCfh6ogR2VybWFueSwgRMO8c3NlbGRvcmYgfCDwn4yQIHwgW0JMXSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwiYWxwbiI6IiIsImZwIjoiIn0=",
+      "configContent": null,
+      "protocol": "vmess",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "",
+      "city": "Dusseldorf",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "45.131.153.56",
+      "health": {
+        "status": "reachable",
+        "host": "de.zhou-yufan.com",
+        "ip": "45.131.153.56",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 842,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "45.131.153.56",
+          "countryCode": "DE",
+          "city": "Dusseldorf",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 884,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 9658
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 307,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6026
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18016
+          },
+          "latencyMs": 20051
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Helsinki · Xray 1",
+      "flag": "🇫🇮",
+      "countryCode": "FI",
+      "isOptimal": false,
+      "ping": 4066,
+      "configUrl": "vless://71a195c5-df47-47ad-81be-f4d3a3a21be3@199.232.239.239:443?mode=auto&path=%2F%40CloudVPNchannel%2F%40CloudVPNchannel%2F%40CloudVPNchannel&security=tls&alpn=h2&encryption=none&insecure=0&host=cloudnet2026.global.ssl.fastly.net&type=xhttp&allowInsecure=0&sni=ssl.fastly.com&fp=safari#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FI",
+      "city": "Helsinki",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2a01:4f9:c012:45b8::1",
+      "health": {
+        "status": "reachable",
+        "host": "199.232.239.239",
+        "ip": "199.232.239.239",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 109,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2a01:4f9:c012:45b8::1",
+          "countryCode": "FI",
+          "city": "Helsinki",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 887,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1108
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 310,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1475
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 10482
+          },
+          "latencyMs": 4066
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Helsinki · Xray 2",
+      "flag": "🇫🇮",
+      "countryCode": "FI",
+      "isOptimal": false,
+      "ping": 4405,
+      "configUrl": "vless://71a195c5-df47-47ad-81be-f4d3a3a21be3@199.232.239.239:443?mode=auto&path=%2F%40CloudVPNchannel%2F%40CloudVPNchannel%2F%40CloudVPNchannel&security=tls&alpn=h2&encryption=none&insecure=0&host=cloudnet2026.global.ssl.fastly.net&type=xhttp&allowInsecure=0&sni=ssl.fastly.com&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FI",
+      "city": "Helsinki",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "62.238.56.109",
+      "health": {
+        "status": "reachable",
+        "host": "199.232.239.239",
+        "ip": "199.232.239.239",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 110,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "62.238.56.109",
+          "countryCode": "FI",
+          "city": "Helsinki",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1608
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1190
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 10553
+          },
+          "latencyMs": 4405
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -88,135 +344,7 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 2373,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 720
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 742
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 8554
-          },
-          "latencyMs": 2373
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 2",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 2410,
-      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "45.80.111.7",
-        "ip": "45.80.111.7",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 741
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 746
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 8566
-          },
-          "latencyMs": 2410
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 3",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 2417,
+      "ping": 2432,
       "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
@@ -233,7 +361,7 @@
         "ip": "45.80.111.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 4,
+        "latencyMs": 3,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.159.179.93",
@@ -242,7 +370,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 890,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -250,15 +378,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 745
+                "latencyMs": 769
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 727
+                "latencyMs": 735
               }
             ]
           },
@@ -268,20 +396,84 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8538
+            "latencyMs": 8568
           },
-          "latencyMs": 2417
+          "latencyMs": 2432
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Paris · Xray 4",
+      "name": "Paris · Xray 2",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 2429,
-      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "ping": 2445,
+      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 736
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 753
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8547
+          },
+          "latencyMs": 2445
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 3",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 2446,
+      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -314,7 +506,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 723
+                "latencyMs": 758
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -322,7 +514,7 @@
                 "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 780
+                "latencyMs": 736
               }
             ]
           },
@@ -332,20 +524,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8548
+            "latencyMs": 8574
           },
-          "latencyMs": 2429
+          "latencyMs": 2446
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Paris · Xray 5",
+      "name": "Paris · Xray 4",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 2431,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "ping": 2482,
+      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -357,11 +549,11 @@
       "exitIp": "51.159.179.93",
       "health": {
         "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 4,
+        "latencyMs": 3,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.159.179.93",
@@ -370,7 +562,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 886,
+            "downloadedBytes": 890,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -378,15 +570,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 746
+                "latencyMs": 775
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 309,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 763
+                "latencyMs": 770
               }
             ]
           },
@@ -396,11 +588,75 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8556
+            "latencyMs": 8557
           },
-          "latencyMs": 2431
+          "latencyMs": 2482
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 5",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 2493,
+      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 787
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 769
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8569
+          },
+          "latencyMs": 2493
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -408,7 +664,199 @@
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 2441,
+      "ping": 2512,
+      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 766
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 777
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8553
+          },
+          "latencyMs": 2512
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 7",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 2514,
+      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=firefox#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 752
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 785
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8535
+          },
+          "latencyMs": 2514
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 8",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 2519,
+      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "FR",
+      "city": "Paris",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.159.179.93",
+      "health": {
+        "status": "reachable",
+        "host": "45.80.111.7",
+        "ip": "45.80.111.7",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.159.179.93",
+          "countryCode": "FR",
+          "city": "Paris",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 770
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 774
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8560
+          },
+          "latencyMs": 2519
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Paris · Xray 9",
+      "flag": "🇫🇷",
+      "countryCode": "FR",
+      "isOptimal": false,
+      "ping": 2531,
       "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
@@ -434,7 +882,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 891,
+            "downloadedBytes": 885,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -442,15 +890,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 763
+                "latencyMs": 783
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 314,
+                "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 754
+                "latencyMs": 757
               }
             ]
           },
@@ -460,148 +908,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8549
+            "latencyMs": 8582
           },
-          "latencyMs": 2441
+          "latencyMs": 2531
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Paris · Xray 7",
+      "name": "Paris · Xray 10",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 2464,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 743
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 766
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 8656
-          },
-          "latencyMs": 2464
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 8",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 5494,
+      "ping": 2580,
       "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=edge#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "FR",
-      "city": "Paris",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.159.179.93",
-      "health": {
-        "status": "reachable",
-        "host": "141.193.213.172",
-        "ip": "141.193.213.172",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.159.179.93",
-          "countryCode": "FR",
-          "city": "Paris",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1760
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2782
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 11589
-          },
-          "latencyMs": 5494
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Paris · Xray 9",
-      "flag": "🇫🇷",
-      "countryCode": "FR",
-      "isOptimal": false,
-      "ping": 6503,
-      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=qq#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -626,7 +946,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 886,
+            "downloadedBytes": 891,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -634,15 +954,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1788
+                "latencyMs": 868
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 309,
+                "bytes": 314,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3797
+                "latencyMs": 786
               }
             ]
           },
@@ -652,20 +972,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 10594
+            "latencyMs": 9220
           },
-          "latencyMs": 6503
+          "latencyMs": 2580
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Paris · Xray 10",
+      "name": "Paris · Xray 11",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 8588,
-      "configUrl": "trojan://humanity@45.80.111.7:443?security=tls&type=ws&path=%2Fassignment&sni=www.calmlunch.com&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "ping": 2670,
+      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=ios#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -677,8 +997,8 @@
       "exitIp": "51.159.179.93",
       "health": {
         "status": "reachable",
-        "host": "45.80.111.7",
-        "ip": "45.80.111.7",
+        "host": "141.193.213.172",
+        "ip": "141.193.213.172",
         "port": 443,
         "transport": "tcp",
         "latencyMs": 3,
@@ -698,7 +1018,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3825
+                "latencyMs": 786
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -706,7 +1026,7 @@
                 "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3854
+                "latencyMs": 791
               }
             ]
           },
@@ -716,20 +1036,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8570
+            "latencyMs": 8561
           },
-          "latencyMs": 8588
+          "latencyMs": 2670
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Paris · Xray 11",
+      "name": "Paris · Xray 12",
       "flag": "🇫🇷",
       "countryCode": "FR",
       "isOptimal": false,
-      "ping": 11530,
-      "configUrl": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=android#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "ping": 3544,
+      "configUrl": "trojan://humanity@141.193.213.172:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&ech=ip.gs+udp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -741,11 +1061,11 @@
       "exitIp": "51.159.179.93",
       "health": {
         "status": "reachable",
-        "host": "45.80.111.7",
-        "ip": "45.80.111.7",
+        "host": "141.193.213.172",
+        "ip": "141.193.213.172",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 4,
+        "latencyMs": 3,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.159.179.93",
@@ -754,7 +1074,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 890,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -762,15 +1082,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 8748
+                "latencyMs": 1855
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1846
+                "latencyMs": 768
               }
             ]
           },
@@ -780,83 +1100,11 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8665
+            "latencyMs": 8763
           },
-          "latencyMs": 11530
+          "latencyMs": 3544
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Jakarta · Xray 1",
-      "flag": "🇮🇩",
-      "countryCode": "ID",
-      "isOptimal": false,
-      "ping": 14267,
-      "configUrl": "vmess://eyJ2IjoiMiIsInBzIjoi8J+HrvCfh6kgSW5kb25lc2lhLCBKYWthcnRhIHwgW0JMXSIsImFkZCI6IlRubVhQSUZWd2Z2eUZadmYudi4zZG5zLnZpcCIsInBvcnQiOiI0NDMiLCJpZCI6ImI2NjRjYzM2LTQ4OTYtNDU0Yi1iYjljLTEzNzdjNzYxNzZkZSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJUbm1YUElGVndmdnlGWnZmLnYuM2Rucy52aXAiLCJwYXRoIjoiL3dzLXZtZXNzIiwidGxzIjoidGxzIiwic25pIjoiVG5tWFBJRlZ3ZnZ5Rlp2Zi52LjNkbnMudmlwIiwiYWxwbiI6IiIsImZwIjoiIn0=",
-      "configContent": null,
-      "protocol": "vmess",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "",
-      "city": "Jakarta",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "8.215.104.115",
-      "health": {
-        "status": "reachable",
-        "host": "TnmXPIFVwfvyFZvf.v.3dns.vip",
-        "ip": "8.215.104.115",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 371,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "8.215.104.115",
-          "countryCode": "ID",
-          "city": "Jakarta",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 88194,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 5663
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 309,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1923
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 87885,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4599
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 6405
-          },
-          "latencyMs": 14267
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -864,8 +1112,8 @@
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 5158,
-      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 10733,
+      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -881,7 +1129,7 @@
         "ip": "45.131.4.38",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 5,
+        "latencyMs": 4,
         "tunnel": {
           "status": "verified",
           "exitIp": "51.158.182.140",
@@ -890,7 +1138,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 887,
+            "downloadedBytes": 892,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -898,15 +1146,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1176
+                "latencyMs": 2151
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 310,
+                "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2751
+                "latencyMs": 3950
               }
             ]
           },
@@ -916,11 +1164,11 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8994
+            "latencyMs": 6951
           },
-          "latencyMs": 5158
+          "latencyMs": 10733
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -928,8 +1176,264 @@
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 5641,
-      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 11096,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&host=www.pleadcourt.org&type=ws&sni=www.pleadcourt.org&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1232
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5084
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8808
+          },
+          "latencyMs": 11096
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 3",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 11370,
+      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3567
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4536
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 10072
+          },
+          "latencyMs": 11370
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 4",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 12632,
+      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5296
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3429
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 9768
+          },
+          "latencyMs": 12632
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 5",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 12924,
+      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 7471
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2463
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8935
+          },
+          "latencyMs": 12924
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 6",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 13096,
+      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -962,7 +1466,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1101
+                "latencyMs": 3041
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -970,7 +1474,7 @@
                 "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1140
+                "latencyMs": 6216
               }
             ]
           },
@@ -980,19 +1484,347 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 5866
+            "latencyMs": 4776
           },
-          "latencyMs": 5641
+          "latencyMs": 13096
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Haarlem · Xray 3",
+      "name": "Haarlem · Xray 7",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 6413,
+      "ping": 15331,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&host=www.pleadcourt.org&type=ws&sni=www.pleadcourt.org&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 5870
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4052
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 8805
+          },
+          "latencyMs": 15331
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 8",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 17465,
+      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=unsafe#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "45.131.4.38",
+        "ip": "45.131.4.38",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 886,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3427
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 11609
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 11367
+          },
+          "latencyMs": 17465
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 9",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 17997,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 7625
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 4172
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 12033
+          },
+          "latencyMs": 17997
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 10",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 22789,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 95195,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2109
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
+                "tlsVerified": true,
+                "latencyMs": 4845
+              },
+              {
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
+                "ok": true,
+                "bytes": 94618,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 14214
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 9919
+          },
+          "latencyMs": 22789
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 11",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 24699,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&host=www.pleadcourt.org&type=ws&sni=www.pleadcourt.org&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "NL",
+      "city": "Haarlem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "51.158.182.140",
+      "health": {
+        "status": "reachable",
+        "host": "8.47.69.0",
+        "ip": "8.47.69.0",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "51.158.182.140",
+          "countryCode": "NL",
+          "city": "Haarlem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 886,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6240
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3566
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 15962
+          },
+          "latencyMs": 24699
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Haarlem · Xray 12",
+      "flag": "🇳🇱",
+      "countryCode": "NL",
+      "isOptimal": false,
+      "ping": 25787,
       "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
@@ -1018,23 +1850,31 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 887,
+            "downloadedBytes": 94933,
             "checks": [
               {
                 "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
                 "tlsVerified": true,
-                "latencyMs": 1088
+                "latencyMs": 18023
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 310,
+                "bytes": 315,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4208
+                "latencyMs": 3298
+              },
+              {
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
+                "ok": true,
+                "bytes": 94618,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2684
               }
             ]
           },
@@ -1044,84 +1884,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 14231
+            "latencyMs": 12038
           },
-          "latencyMs": 6413
+          "latencyMs": 25787
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Haarlem · Xray 4",
+      "name": "Haarlem · Xray 13",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 8314,
-      "configUrl": "trojan://humanity@45.131.4.38:443?alpn=http%2F1.1&host=www.pleadcourt.org&insecure=0&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "45.131.4.38",
-        "ip": "45.131.4.38",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1262
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 310,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4793
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 9966
-          },
-          "latencyMs": 8314
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 5",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 8380,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 27857,
+      "configUrl": "trojan://humanity@8.47.69.0:443?security=tls&sni=www.pleadcourt.org&type=ws&host=www.pleadcourt.org&path=%2Fassignment&fp=android#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -1146,7 +1922,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 891,
+            "downloadedBytes": 887,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -1154,15 +1930,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 5518
+                "latencyMs": 5479
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 314,
+                "bytes": 310,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1024
+                "latencyMs": 16595
               }
             ]
           },
@@ -1172,20 +1948,20 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 12610
+            "latencyMs": 11075
           },
-          "latencyMs": 8380
+          "latencyMs": 27857
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Haarlem · Xray 6",
+      "name": "Haarlem · Xray 14",
       "flag": "🇳🇱",
       "countryCode": "NL",
       "isOptimal": false,
-      "ping": 9986,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
+      "ping": 28356,
+      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&host=www.pleadcourt.org&type=ws&sni=www.pleadcourt.org&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "trojan",
       "isPremium": false,
@@ -1210,143 +1986,15 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 891,
+            "downloadedBytes": 94927,
             "checks": [
               {
                 "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
                 "tlsVerified": true,
-                "latencyMs": 3357
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3224
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 9606
-          },
-          "latencyMs": 9986
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 7",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 11118,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 891,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1719
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 314,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 6868
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 9008
-          },
-          "latencyMs": 11118
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 8",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 12410,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 886,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 3435
+                "latencyMs": 18025
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -1354,71 +2002,15 @@
                 "bytes": 309,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3339
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 16803
-          },
-          "latencyMs": 12410
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 9",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 18381,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=unsafe#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 4,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 887,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 11334
+                "latencyMs": 1531
               },
               {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 310,
+                "bytes": 94618,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4115
+                "latencyMs": 4142
               }
             ]
           },
@@ -1428,203 +2020,11 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 8714
+            "latencyMs": 8818
           },
-          "latencyMs": 18381
+          "latencyMs": 28356
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 10",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 21274,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2259
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 16441
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 10840
-          },
-          "latencyMs": 21274
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 11",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 21850,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 10685
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 9313
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 12811
-          },
-          "latencyMs": 21850
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Haarlem · Xray 12",
-      "flag": "🇳🇱",
-      "countryCode": "NL",
-      "isOptimal": false,
-      "ping": 30491,
-      "configUrl": "trojan://humanity@8.47.69.0:443?path=%2Fassignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Haarlem%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "trojan",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Haarlem",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "51.158.182.140",
-      "health": {
-        "status": "reachable",
-        "host": "8.47.69.0",
-        "ip": "8.47.69.0",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 3,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "51.158.182.140",
-          "countryCode": "NL",
-          "city": "Haarlem",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 12384
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 2346
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 8888
-          },
-          "latencyMs": 30491
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -1632,7 +2032,71 @@
       "flag": "🇵🇱",
       "countryCode": "PL",
       "isOptimal": false,
-      "ping": 3429,
+      "ping": 2779,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "PL",
+      "city": "Warsaw",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "178.95.176.7",
+      "health": {
+        "status": "reachable",
+        "host": "185.178.208.140",
+        "ip": "185.178.208.140",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 109,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "178.95.176.7",
+          "countryCode": "PL",
+          "city": "Warsaw",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 889,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 872
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 846
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18016
+          },
+          "latencyMs": 2779
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Warsaw · Xray 2",
+      "flag": "🇵🇱",
+      "countryCode": "PL",
+      "isOptimal": false,
+      "ping": 3523,
       "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&sni=static.bakarova-top.ru&headerType=none&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
@@ -1658,70 +2122,6 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 890,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1269
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 313,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 890
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 18017
-          },
-          "latencyMs": 3429
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 2",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 3486,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=safari#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.95.176.7",
-      "health": {
-        "status": "reachable",
-        "host": "185.178.208.140",
-        "ip": "185.178.208.140",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 110,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.95.176.7",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
             "downloadedBytes": 885,
             "checks": [
               {
@@ -1730,7 +2130,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1066
+                "latencyMs": 867
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -1738,199 +2138,7 @@
                 "bytes": 308,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1366
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 18013
-          },
-          "latencyMs": 3486
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 3",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 3659,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&sni=static.bakarova-top.ru&headerType=none&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.95.176.7",
-      "health": {
-        "status": "reachable",
-        "host": "185.178.208.140",
-        "ip": "185.178.208.140",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 110,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.95.176.7",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 888,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1297
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 311,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1325
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 18024
-          },
-          "latencyMs": 3659
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 4",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 4034,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&host=static.bakarova-top.ru&sni=static.bakarova-top.ru&headerType=none&mode=packet-up&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.95.176.7",
-      "health": {
-        "status": "reachable",
-        "host": "185.178.208.140",
-        "ip": "185.178.208.140",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 110,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.95.176.7",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 884,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1501
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 307,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1515
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 18015
-          },
-          "latencyMs": 4034
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 5",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 4111,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.95.176.7",
-      "health": {
-        "status": "reachable",
-        "host": "185.178.208.140",
-        "ip": "185.178.208.140",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 110,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.95.176.7",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 889,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1316
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1304
+                "latencyMs": 1268
               }
             ]
           },
@@ -1942,17 +2150,17 @@
             "tlsVerified": false,
             "latencyMs": 18017
           },
-          "latencyMs": 4111
+          "latencyMs": 3523
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Warsaw · Xray 6",
+      "name": "Warsaw · Xray 3",
       "flag": "🇵🇱",
       "countryCode": "PL",
       "isOptimal": false,
-      "ping": 4115,
+      "ping": 3559,
       "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&host=static.bakarova-top.ru&sni=static.bakarova-top.ru&headerType=none&mode=packet-up&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
@@ -1969,7 +2177,7 @@
         "ip": "185.178.208.140",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 110,
+        "latencyMs": 109,
         "tunnel": {
           "status": "verified",
           "exitIp": "178.95.176.7",
@@ -1978,7 +2186,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 884,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -1986,15 +2194,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1328
+                "latencyMs": 1275
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 307,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1726
+                "latencyMs": 1256
               }
             ]
           },
@@ -2004,83 +2212,19 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 18017
+            "latencyMs": 18016
           },
-          "latencyMs": 4115
+          "latencyMs": 3559
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Warsaw · Xray 7",
+      "name": "Warsaw · Xray 4",
       "flag": "🇵🇱",
       "countryCode": "PL",
       "isOptimal": false,
-      "ping": 4275,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&sni=static.bakarova-top.ru&headerType=none&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "PL",
-      "city": "Warsaw",
-      "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "178.95.176.7",
-      "health": {
-        "status": "reachable",
-        "host": "185.178.208.140",
-        "ip": "185.178.208.140",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 110,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "178.95.176.7",
-          "countryCode": "PL",
-          "city": "Warsaw",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 889,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1683
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 312,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1526
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": false,
-            "bytes": 0,
-            "httpStatus": 0,
-            "tlsVerified": false,
-            "latencyMs": 18054
-          },
-          "latencyMs": 4275
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      }
-    },
-    {
-      "name": "Warsaw · Xray 8",
-      "flag": "🇵🇱",
-      "countryCode": "PL",
-      "isOptimal": false,
-      "ping": 4419,
+      "ping": 3561,
       "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&host=static.bakarova-top.ru&sni=static.bakarova-top.ru&headerType=none&mode=packet-up&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
@@ -2114,7 +2258,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1687
+                "latencyMs": 1269
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2122,7 +2266,7 @@
                 "bytes": 312,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1254
+                "latencyMs": 847
               }
             ]
           },
@@ -2132,20 +2276,84 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 18016
+            "latencyMs": 18017
           },
-          "latencyMs": 4419
+          "latencyMs": 3561
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Warsaw · Xray 9",
+      "name": "Warsaw · Xray 5",
       "flag": "🇵🇱",
       "countryCode": "PL",
       "isOptimal": false,
-      "ping": 4743,
-      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "ping": 3868,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&host=static.bakarova-top.ru&sni=static.bakarova-top.ru&headerType=none&mode=packet-up&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "PL",
+      "city": "Warsaw",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "178.95.176.7",
+      "health": {
+        "status": "reachable",
+        "host": "185.178.208.140",
+        "ip": "185.178.208.140",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 111,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "178.95.176.7",
+          "countryCode": "PL",
+          "city": "Warsaw",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1404
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1360
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18015
+          },
+          "latencyMs": 3868
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Warsaw · Xray 6",
+      "flag": "🇵🇱",
+      "countryCode": "PL",
+      "isOptimal": false,
+      "ping": 3975,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&sni=static.bakarova-top.ru&headerType=none&fp=qq#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -2178,7 +2386,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 2407
+                "latencyMs": 1299
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2186,7 +2394,7 @@
                 "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1271
+                "latencyMs": 1281
               }
             ]
           },
@@ -2196,19 +2404,83 @@
             "bytes": 0,
             "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 18016
+            "latencyMs": 18018
           },
-          "latencyMs": 4743
+          "latencyMs": 3975
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
-      "name": "Warsaw · Xray 10",
+      "name": "Warsaw · Xray 7",
       "flag": "🇵🇱",
       "countryCode": "PL",
       "isOptimal": false,
-      "ping": 5561,
+      "ping": 3996,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=safari#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "PL",
+      "city": "Warsaw",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "178.95.176.7",
+      "health": {
+        "status": "reachable",
+        "host": "185.178.208.140",
+        "ip": "185.178.208.140",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 109,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "178.95.176.7",
+          "countryCode": "PL",
+          "city": "Warsaw",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 889,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1305
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1658
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18015
+          },
+          "latencyMs": 3996
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Warsaw · Xray 8",
+      "flag": "🇵🇱",
+      "countryCode": "PL",
+      "isOptimal": false,
+      "ping": 4178,
       "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
@@ -2234,7 +2506,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 885,
+            "downloadedBytes": 890,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2242,15 +2514,15 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1720
+                "latencyMs": 1792
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 308,
+                "bytes": 313,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1261
+                "latencyMs": 1345
               }
             ]
           },
@@ -2262,9 +2534,137 @@
             "tlsVerified": false,
             "latencyMs": 18017
           },
-          "latencyMs": 5561
+          "latencyMs": 4178
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Warsaw · Xray 9",
+      "flag": "🇵🇱",
+      "countryCode": "PL",
+      "isOptimal": false,
+      "ping": 4307,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&alpn=h2&encryption=none&insecure=0&host=static.bakarova-top.ru&type=xhttp&allowInsecure=0&sni=static.bakarova-top.ru&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "PL",
+      "city": "Warsaw",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "178.95.176.7",
+      "health": {
+        "status": "reachable",
+        "host": "185.178.208.140",
+        "ip": "185.178.208.140",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 110,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "178.95.176.7",
+          "countryCode": "PL",
+          "city": "Warsaw",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 889,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2350
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 312,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 871
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18015
+          },
+          "latencyMs": 4307
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Warsaw · Xray 10",
+      "flag": "🇵🇱",
+      "countryCode": "PL",
+      "isOptimal": false,
+      "ping": 4383,
+      "configUrl": "vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?type=xhttp&security=tls&encryption=none&path=%2Fapi%2Fv2%2Fevents&sni=static.bakarova-top.ru&headerType=none&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "PL",
+      "city": "Warsaw",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "178.95.176.7",
+      "health": {
+        "status": "reachable",
+        "host": "185.178.208.140",
+        "ip": "185.178.208.140",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 110,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "178.95.176.7",
+          "countryCode": "PL",
+          "city": "Warsaw",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 890,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1267
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 313,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1269
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18014
+          },
+          "latencyMs": 4383
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     },
     {
@@ -2272,24 +2672,26 @@
       "flag": "🇷🇺",
       "countryCode": "RU",
       "isOptimal": false,
-      "ping": 15366,
-      "configUrl": "vmess://eyJ2IjoiMiIsInBzIjoi8J+Ht/Cfh7ogUnVzc2lhIHwgWypDSURSXSBZQSIsImFkZCI6IjE1OC4xNjAuMTgwLjE2NSIsInBvcnQiOiIyNDIxMiIsInR5cGUiOiJub25lIiwiaWQiOiJjNThjMTIwNS1iMzA4LTQxNmYtODUwMy1jMDQ1NTdhYmY5M2QiLCJhaWQiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoidGxzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsImFscG4iOiIiLCJmcCI6IiJ9",
+      "ping": 4064,
+      "configUrl": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ2bWVzcyIsCiAgImFkZCI6ICIxNTguMTYwLjE4MC4xNjUiLAogICJwb3J0IjogMjQyMTIsCiAgImlkIjogImM1OGMxMjA1LWIzMDgtNDE2Zi04NTAzLWMwNDU1N2FiZjkzZCIsCiAgInNjeSI6ICJhdXRvIiwKICAibmV0IjogInRjcCIsCiAgInRscyI6ICJ0bHMiLAogICJ0eXBlIjogIm5vbmUiLAogICJmcCI6ICJjaHJvbWUiLAogICJhbHBuIjogImgyLGh0dHAvMS4xIiwKICAiZWNoIjogIkFGUCtEUUJQQUFBZ0FDQndqQTNqcFV5MkgwMG5pelJSVWZkbmJ2KzI4eVhMczFTTCtwdkhzVWpHQkFBa0FBRUFBUUFCQUFJQUFRQURBQUlBQVFBQ0FBSUFBZ0FEQUFNQUFRQURBQUlBQXdBREFBQUFBQT09IiwKICAicGNzIjogIjNkZTk0NDE3NDA5YjgzNWI2ZDEzNjJmYjAwZTE1YzEwYjVlMGYwNDNhM2MwZmMyOWY3MmRjYmI5NDNhMzJhYzUsYTIzNzJkMDY0MzFlOTcxNjM2NWVlZWQ0N2VjMDIwMzUxNDk3ZDE4MmZjYzAzOGU0NTdlNTgxNjhhMDNjYWMwNywwZmMwOTAxY2NhMmJhZTllOWZkYmIwMmQ1MGQwMmYxMDk0ZjdiMzY2NzIwODY5OTFiOWU4OTc2MjZkYzQ4NWYwLGVlNWY3YWJkNjk4MWJiMDI1NTYzMmNkOGY0OTI4MzQ1MWI0YjE4ODQ0ZDEyMDQwYjQ0ZWUwMGYwN2I4ZmUyYzYiCn0=",
       "configContent": null,
       "protocol": "vmess",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
+      "pinned": true,
+      "source": "pinned-local",
       "declaredCountryCode": "",
       "city": "Moscow",
       "locationSource": "cabinet-access",
       "exitIp": "158.160.180.165",
       "health": {
-        "status": "reachable",
+        "status": "unreachable",
         "host": "158.160.180.165",
         "ip": "158.160.180.165",
         "port": 24212,
         "transport": "tcp",
-        "latencyMs": 240,
+        "latencyMs": null,
         "tunnel": {
           "status": "verified",
           "exitIp": "158.160.180.165",
@@ -2306,7 +2708,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4437
+                "latencyMs": 1134
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2314,7 +2716,7 @@
                 "bytes": 311,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 3850
+                "latencyMs": 1333
               }
             ]
           },
@@ -2324,11 +2726,11 @@
             "bytes": 42095,
             "httpStatus": 200,
             "tlsVerified": false,
-            "latencyMs": 3772
+            "latencyMs": 1898
           },
-          "latencyMs": 15366
+          "latencyMs": 4064
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       },
       "geoCountryCode": "RU",
       "geoCity": "Moscow"
@@ -2338,279 +2740,7 @@
       "flag": "🇷🇺",
       "countryCode": "RU",
       "isOptimal": false,
-      "ping": 19616,
-      "configUrl": "vless://6d414291-7889-41c3-b11e-e3efa4385930@153.76.116.127:8442?encryption=none&pbk=Y1HhtxYRbW5hHs8AbfIzKG_TU3iHO9ClcYjzKY5DOW4&security=reality&serviceName=grpc-tunnel&sid=a5dccceb609d8e2b&sni=cloud.hlclub.tech&type=grpc&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Moscow",
-      "locationSource": "cabinet-access",
-      "exitIp": "195.133.195.166",
-      "health": {
-        "status": "unreachable",
-        "host": "153.76.116.127",
-        "ip": "153.76.116.127",
-        "port": 8442,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "195.133.195.166",
-          "countryCode": "NL",
-          "city": "Kerkrade",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 888,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8440
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 311,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4656
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 5435
-          },
-          "latencyMs": 19616
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "NL",
-      "geoCity": "Kerkrade"
-    },
-    {
-      "name": "Москва · Xray 3",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 20001,
-      "configUrl": "vless://6d414291-7889-41c3-b11e-e3efa4385930@153.76.116.127:8442?encryption=none&pbk=Y1HhtxYRbW5hHs8AbfIzKG_TU3iHO9ClcYjzKY5DOW4&security=reality&serviceName=grpc-tunnel&sid=a5dccceb609d8e2b&sni=cloud.hlclub.tech&type=grpc&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Moscow",
-      "locationSource": "cabinet-access",
-      "exitIp": "195.133.195.166",
-      "health": {
-        "status": "unreachable",
-        "host": "153.76.116.127",
-        "ip": "153.76.116.127",
-        "port": 8442,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "195.133.195.166",
-          "countryCode": "NL",
-          "city": "Kerkrade",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8435
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4642
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 5199
-          },
-          "latencyMs": 20001
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "NL",
-      "geoCity": "Kerkrade"
-    },
-    {
-      "name": "Москва · Xray 4",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 20275,
-      "configUrl": "vless://6d414291-7889-41c3-b11e-e3efa4385930@153.76.116.127:8442?encryption=none&pbk=Y1HhtxYRbW5hHs8AbfIzKG_TU3iHO9ClcYjzKY5DOW4&security=reality&serviceName=grpc-tunnel&sid=a5dccceb609d8e2b&sni=cloud.hlclub.tech&type=grpc&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Moscow",
-      "locationSource": "cabinet-access",
-      "exitIp": "195.133.195.166",
-      "health": {
-        "status": "unreachable",
-        "host": "153.76.116.127",
-        "ip": "153.76.116.127",
-        "port": 8442,
-        "transport": "tcp",
-        "latencyMs": null,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "195.133.195.166",
-          "countryCode": "NL",
-          "city": "Kerkrade",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 892,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 8439
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": true,
-                "bytes": 315,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 4635
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 5185
-          },
-          "latencyMs": 20275
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "NL",
-      "geoCity": "Kerkrade"
-    },
-    {
-      "name": "Москва · Xray 5",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 22380,
-      "configUrl": "vless://f439e4fe-139b-4882-ad8b-a16176d09c88@81.222.148.104:443?security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&type=raw&sni=eu53.cdn77.icu&sid=1ed136481e0ede74&fp=qq#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D",
-      "configContent": null,
-      "protocol": "vless",
-      "isPremium": false,
-      "xtlsVision": false,
-      "xtlsVisionFlow": null,
-      "declaredCountryCode": "",
-      "city": "Moscow",
-      "locationSource": "cabinet-access",
-      "exitIp": "81.222.148.104",
-      "health": {
-        "status": "reachable",
-        "host": "81.222.148.104",
-        "ip": "81.222.148.104",
-        "port": 443,
-        "transport": "tcp",
-        "latencyMs": 252,
-        "tunnel": {
-          "status": "verified",
-          "exitIp": "81.222.148.104",
-          "countryCode": "RU",
-          "city": "Ufa",
-          "sites": {
-            "successful": 2,
-            "required": 2,
-            "downloadedBytes": 88462,
-            "checks": [
-              {
-                "url": "https://example.com/",
-                "ok": true,
-                "bytes": 577,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1213
-              },
-              {
-                "url": "https://www.cloudflare.com/cdn-cgi/trace",
-                "ok": false,
-                "bytes": 0,
-                "httpStatus": 0,
-                "tlsVerified": true,
-                "latencyMs": 18019
-              },
-              {
-                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
-                "ok": true,
-                "bytes": 87885,
-                "httpStatus": 200,
-                "tlsVerified": true,
-                "latencyMs": 1749
-              }
-            ]
-          },
-          "cabinetSite": {
-            "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
-            "tlsVerified": false,
-            "latencyMs": 1951
-          },
-          "latencyMs": 22380
-        },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "RU",
-      "geoCity": "Ufa"
-    },
-    {
-      "name": "Москва · Xray 6",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
-      "isOptimal": false,
-      "ping": 22424,
+      "ping": 22357,
       "configUrl": "vless://f439e4fe-139b-4882-ad8b-a16176d09c88@81.222.148.104:443?security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&type=raw&sni=eu53.cdn77.icu&sid=1ed136481e0ede74&fp=safari#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
@@ -2627,7 +2757,7 @@
         "ip": "81.222.148.104",
         "port": 443,
         "transport": "tcp",
-        "latencyMs": 254,
+        "latencyMs": 249,
         "tunnel": {
           "status": "verified",
           "exitIp": "81.222.148.104",
@@ -2636,7 +2766,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 88462,
+            "downloadedBytes": 95195,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2644,7 +2774,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1220
+                "latencyMs": 1213
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2652,15 +2782,15 @@
                 "bytes": 0,
                 "httpStatus": 0,
                 "tlsVerified": true,
-                "latencyMs": 18018
+                "latencyMs": 18017
               },
               {
                 "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 87885,
+                "bytes": 94618,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1764
+                "latencyMs": 1747
               }
             ]
           },
@@ -2670,22 +2800,22 @@
             "bytes": 42095,
             "httpStatus": 200,
             "tlsVerified": false,
-            "latencyMs": 1928
+            "latencyMs": 1982
           },
-          "latencyMs": 22424
+          "latencyMs": 22357
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       },
       "geoCountryCode": "RU",
       "geoCity": "Ufa"
     },
     {
-      "name": "Москва · Xray 7",
+      "name": "Москва · Xray 3",
       "flag": "🇷🇺",
       "countryCode": "RU",
       "isOptimal": false,
-      "ping": 22548,
-      "configUrl": "vless://f439e4fe-139b-4882-ad8b-a16176d09c88@81.222.148.104:443?security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&type=raw&sni=eu53.cdn77.icu&sid=1ed136481e0ede74&fp=chrome#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D",
+      "ping": 22361,
+      "configUrl": "vless://f439e4fe-139b-4882-ad8b-a16176d09c88@81.222.148.104:443?security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&type=raw&sni=eu53.cdn77.icu&sid=1ed136481e0ede74&fp=qq#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
@@ -2710,7 +2840,7 @@
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 88462,
+            "downloadedBytes": 95195,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2718,7 +2848,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1231
+                "latencyMs": 1232
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2726,15 +2856,15 @@
                 "bytes": 0,
                 "httpStatus": 0,
                 "tlsVerified": true,
-                "latencyMs": 18019
+                "latencyMs": 18017
               },
               {
                 "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
                 "ok": true,
-                "bytes": 87885,
+                "bytes": 94618,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 1877
+                "latencyMs": 1729
               }
             ]
           },
@@ -2744,43 +2874,117 @@
             "bytes": 42095,
             "httpStatus": 200,
             "tlsVerified": false,
-            "latencyMs": 1971
+            "latencyMs": 1968
           },
-          "latencyMs": 22548
+          "latencyMs": 22361
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
       },
       "geoCountryCode": "RU",
       "geoCity": "Ufa"
     },
     {
-      "name": "Москва · Xray 8",
+      "name": "Москва · Xray 4",
       "flag": "🇷🇺",
       "countryCode": "RU",
       "isOptimal": false,
-      "ping": 24175,
-      "configUrl": "vless://6d414291-7889-41c3-b11e-e3efa4385930@153.76.116.127:8442?encryption=none&pbk=Y1HhtxYRbW5hHs8AbfIzKG_TU3iHO9ClcYjzKY5DOW4&security=reality&serviceName=grpc-tunnel&sid=a5dccceb609d8e2b&sni=cloud.hlclub.tech&type=grpc&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "ping": 22522,
+      "configUrl": "vless://f439e4fe-139b-4882-ad8b-a16176d09c88@81.222.148.104:443?security=reality&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&type=raw&sni=eu53.cdn77.icu&sid=1ed136481e0ede74&fp=chrome#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
+      "declaredCountryCode": "",
       "city": "Moscow",
       "locationSource": "cabinet-access",
-      "exitIp": "195.133.195.166",
+      "exitIp": "81.222.148.104",
       "health": {
-        "status": "unreachable",
-        "host": "153.76.116.127",
-        "ip": "153.76.116.127",
-        "port": 8442,
+        "status": "reachable",
+        "host": "81.222.148.104",
+        "ip": "81.222.148.104",
+        "port": 443,
         "transport": "tcp",
-        "latencyMs": null,
+        "latencyMs": 251,
         "tunnel": {
           "status": "verified",
-          "exitIp": "195.133.195.166",
-          "countryCode": "NL",
-          "city": "Kerkrade",
+          "exitIp": "81.222.148.104",
+          "countryCode": "RU",
+          "city": "Ufa",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 95195,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1219
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
+                "tlsVerified": true,
+                "latencyMs": 18017
+              },
+              {
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
+                "ok": true,
+                "bytes": 94618,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1913
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": true,
+            "bytes": 42095,
+            "httpStatus": 200,
+            "tlsVerified": false,
+            "latencyMs": 1998
+          },
+          "latencyMs": 22522
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      },
+      "geoCountryCode": "RU",
+      "geoCity": "Ufa"
+    },
+    {
+      "name": "Singapore · Xray 1",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 5057,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
           "sites": {
             "successful": 2,
             "required": 2,
@@ -2792,7 +2996,7 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 8058
+                "latencyMs": 1453
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
@@ -2800,57 +3004,55 @@
                 "bytes": 316,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4648
+                "latencyMs": 1711
               }
             ]
           },
           "cabinetSite": {
             "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 5438
+            "latencyMs": 18017
           },
-          "latencyMs": 24175
+          "latencyMs": 5057
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "NL",
-      "geoCity": "Kerkrade"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
     },
     {
-      "name": "Москва · Xray 9",
-      "flag": "🇷🇺",
-      "countryCode": "RU",
+      "name": "Singapore · Xray 2",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
       "isOptimal": false,
-      "ping": 27460,
-      "configUrl": "vless://6d414291-7889-41c3-b11e-e3efa4385930@153.76.116.127:8442?encryption=none&pbk=Y1HhtxYRbW5hHs8AbfIzKG_TU3iHO9ClcYjzKY5DOW4&security=reality&serviceName=grpc-tunnel&sid=a5dccceb609d8e2b&sni=cloud.hlclub.tech&type=grpc&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "ping": 5324,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
       "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "NL",
-      "city": "Moscow",
-      "locationSource": "cabinet-access",
-      "exitIp": "195.133.195.166",
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
       "health": {
-        "status": "unreachable",
-        "host": "153.76.116.127",
-        "ip": "153.76.116.127",
-        "port": 8442,
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
         "transport": "tcp",
-        "latencyMs": null,
+        "latencyMs": 3,
         "tunnel": {
           "status": "verified",
-          "exitIp": "195.133.195.166",
-          "countryCode": "NL",
-          "city": "Kerkrade",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 888,
+            "downloadedBytes": 898,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2858,65 +3060,63 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 8435
+                "latencyMs": 1755
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 311,
+                "bytes": 321,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 4647
+                "latencyMs": 1698
               }
             ]
           },
           "cabinetSite": {
             "url": "https://cabinet.new.mil.ru/",
-            "ok": true,
-            "bytes": 42095,
-            "httpStatus": 200,
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
             "tlsVerified": false,
-            "latencyMs": 1073
+            "latencyMs": 18019
           },
-          "latencyMs": 27460
+          "latencyMs": 5324
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
-      },
-      "geoCountryCode": "NL",
-      "geoCity": "Kerkrade"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
     },
     {
-      "name": "Chicago · Xray 1",
-      "flag": "🇺🇸",
-      "countryCode": "US",
+      "name": "Singapore · Xray 3",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
       "isOptimal": false,
-      "ping": 1674,
-      "configUrl": "vmess://eyJhZGQiOiIxMDQuMjEuNy4xMzMiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InZtZXNzLmxidzY2Ni5kcGRucy5vcmciLCJpZCI6IjBjZjZkOTcwLTNmMWQtNGFhZS1hOTg5LTkyYThmNzZhZTNkYiIsImluc2VjdXJlIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii93cz9lZD0yMDQ4IiwicG9ydCI6IjgwIiwicHMiOiLwn4e68J+HuCBVbml0ZWQgU3RhdGVzLCBDaGljYWdvIHwg8J+MkCB8IFtCTF0iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=",
+      "ping": 5336,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=qq#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "configContent": null,
-      "protocol": "vmess",
+      "protocol": "vless",
       "isPremium": false,
       "xtlsVision": false,
       "xtlsVisionFlow": null,
-      "declaredCountryCode": "",
-      "city": "Chicago",
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
       "locationSource": "tunnel-exit-ipwho.is",
-      "exitIp": "2603:c028:4501:3d88:b782:2bc:9b2c:f38a",
+      "exitIp": "2407:d140:1:100::103",
       "health": {
         "status": "reachable",
-        "host": "104.21.7.133",
-        "ip": "104.21.7.133",
-        "port": 80,
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
         "transport": "tcp",
         "latencyMs": 3,
         "tunnel": {
           "status": "verified",
-          "exitIp": "2603:c028:4501:3d88:b782:2bc:9b2c:f38a",
-          "countryCode": "US",
-          "city": "Chicago",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
           "sites": {
             "successful": 2,
             "required": 2,
-            "downloadedBytes": 911,
+            "downloadedBytes": 893,
             "checks": [
               {
                 "url": "https://example.com/",
@@ -2924,15 +3124,79 @@
                 "bytes": 577,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 518
+                "latencyMs": 1705
               },
               {
                 "url": "https://www.cloudflare.com/cdn-cgi/trace",
                 "ok": true,
-                "bytes": 334,
+                "bytes": 316,
                 "httpStatus": 200,
                 "tlsVerified": true,
-                "latencyMs": 494
+                "latencyMs": 1725
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18016
+          },
+          "latencyMs": 5336
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Singapore · Xray 4",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 5476,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=ios#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 898,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1754
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 321,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1815
               }
             ]
           },
@@ -2944,9 +3208,657 @@
             "tlsVerified": false,
             "latencyMs": 18018
           },
-          "latencyMs": 1674
+          "latencyMs": 5476
         },
-        "checkedAt": "2026-10-28T10:46:38Z"
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Singapore · Xray 5",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 6916,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=edge#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1742
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2972
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18017
+          },
+          "latencyMs": 6916
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Singapore · Xray 6",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 7597,
+      "configUrl": "trojan://34bfb8d8-e37f-4872-a452-a2b2b4310aed@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Ftrojan-ws&security=tls&insecure=1&host=support.zoom.us.sg4.zidstore.net&type=ws&allowInsecure=1&sni=support.zoom.us.sg4.zidstore.net&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "trojan",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 892,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1675
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 315,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1680
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 7422
+          },
+          "latencyMs": 7597
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Singapore · Xray 7",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 9377,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=android#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 898,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1757
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 321,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1668
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18018
+          },
+          "latencyMs": 9377
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Singapore · Xray 8",
+      "flag": "🇸🇬",
+      "countryCode": "SG",
+      "isOptimal": false,
+      "ping": 14583,
+      "configUrl": "vless://22c2c689-767c-4042-a40a-a4189a6afd04@support.zoom.us:443?pcs=b83a89abf68f3ff79ba8fa0041347d78ad7d97555a2b62bada3bf0b51324d85c&path=%2Fwhatever%2Fvless&security=tls&host=support.zoom.us.sg4.zidstore.net&type=ws&sni=support.zoom.us.sg4.zidstore.net&fp=safari#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": false,
+      "xtlsVisionFlow": null,
+      "declaredCountryCode": "SG",
+      "city": "Singapore",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "2407:d140:1:100::103",
+      "health": {
+        "status": "reachable",
+        "host": "support.zoom.us",
+        "ip": "170.114.46.6",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "2407:d140:1:100::103",
+          "countryCode": "SG",
+          "city": "Singapore",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 94938,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": false,
+                "bytes": 0,
+                "httpStatus": 0,
+                "tlsVerified": true,
+                "latencyMs": 7915
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 320,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1728
+              },
+              {
+                "url": "https://raw.githubusercontent.com/TimaFeyka/hole-vpn-servers/main/data/xray.json",
+                "ok": true,
+                "bytes": 94618,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3005
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18017
+          },
+          "latencyMs": 14583
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 1",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 5948,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3348,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 886,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2722
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 309,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 1000
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18018
+          },
+          "latencyMs": 5948
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 2",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 7499,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 3347,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2322
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2740
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18020
+          },
+          "latencyMs": 7499
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 3",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 7567,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=qq#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 2313,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2262
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2859
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18018
+          },
+          "latencyMs": 7567
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 4",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 8594,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 228,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 885,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3428
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 308,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 3291
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18018
+          },
+          "latencyMs": 8594
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 5",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 12113,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 244,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 6287
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 2106
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18017
+          },
+          "latencyMs": 12113
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
+      }
+    },
+    {
+      "name": "Provo-Orem · Xray 6",
+      "flag": "🇺🇸",
+      "countryCode": "US",
+      "isOptimal": false,
+      "ping": 23627,
+      "configUrl": "vless://50a87e21-f0e2-4b53-a787-91adfe748f63@swidenafterlanzerotte.space:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=swidenafterlanzerotte.space&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&fp=edge#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "configContent": null,
+      "protocol": "vless",
+      "isPremium": false,
+      "xtlsVision": true,
+      "xtlsVisionFlow": "xtls-rprx-vision",
+      "declaredCountryCode": "US",
+      "city": "Provo-Orem",
+      "locationSource": "tunnel-exit-ipwho.is",
+      "exitIp": "201.58.187.78",
+      "health": {
+        "status": "reachable",
+        "host": "swidenafterlanzerotte.space",
+        "ip": "201.58.187.78",
+        "port": 443,
+        "transport": "tcp",
+        "latencyMs": 1242,
+        "tunnel": {
+          "status": "verified",
+          "exitIp": "201.58.187.78",
+          "countryCode": "US",
+          "city": "Provo-Orem",
+          "sites": {
+            "successful": 2,
+            "required": 2,
+            "downloadedBytes": 891,
+            "checks": [
+              {
+                "url": "https://example.com/",
+                "ok": true,
+                "bytes": 577,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 12293
+              },
+              {
+                "url": "https://www.cloudflare.com/cdn-cgi/trace",
+                "ok": true,
+                "bytes": 314,
+                "httpStatus": 200,
+                "tlsVerified": true,
+                "latencyMs": 8135
+              }
+            ]
+          },
+          "cabinetSite": {
+            "url": "https://cabinet.new.mil.ru/",
+            "ok": false,
+            "bytes": 0,
+            "httpStatus": 0,
+            "tlsVerified": false,
+            "latencyMs": 18016
+          },
+          "latencyMs": 23627
+        },
+        "checkedAt": "2026-10-28T11:26:28Z"
       }
     }
   ]
